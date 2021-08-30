@@ -1,0 +1,104 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "c5bd2267-3ce0-4f4b-a891-cce8638a24fa",
+  "Name": "ProjectTeam",
+  "AccessRightsMode": "Both",
+  "BaseGuid": "31b5643f-ddd7-4021-8f3c-29b43f4df51f",
+  "CanBeNavigationPropertyType": true,
+  "CreationAreaMetadata": {
+    "NameGuid": "4c24e354-cfb4-4f22-8629-bb17b0b6d23f",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "b0125fbd-3b91-4dbb-914a-689276216404",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true
+  },
+  "HandledEvents": [
+    "RefreshClient"
+  ],
+  "HideFromNavigationEditorCreationArea": true,
+  "IconResourcesKeys": [],
+  "IsAutoCreated": true,
+  "IsVisible": false,
+  "OperationsClass": "",
+  "Overridden": [
+    "IsAutoCreated",
+    "IsVisible",
+    "HideFromNavigationEditorCreationArea"
+  ],
+  "PublicFunctions": [
+    {
+      "NameGuid": "f469bf0d-07aa-46e3-8b03-141d054e9394",
+      "Name": "DeleteMemberFromGroup",
+      "Parameters": [
+        {
+          "NameGuid": "52592ab5-5919-463b-bc1d-be6ccd5a4f6a",
+          "Name": "mainGroup",
+          "ParameterType": "global::Sungero.Projects.IProjectTeam",
+          "ParameterTypeFullName": "Sungero.Projects.IProjectTeam, Sungero.Domain.Interfaces"
+        },
+        {
+          "NameGuid": "9e986dba-fdb6-4fc3-8b9f-f68bda9824d9",
+          "Name": "deletedMember",
+          "ParameterType": "global::Sungero.CoreEntities.IRecipient",
+          "ParameterTypeFullName": "Sungero.CoreEntities.IRecipient, Sungero.Domain.Shared"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "NameGuid": "38e7fc72-184f-4aca-ae9c-6434505e74bf",
+      "Name": "AddMemberToGroup",
+      "Parameters": [
+        {
+          "NameGuid": "e040c2f2-d369-44e1-940e-20908d70ac1c",
+          "Name": "mainGroup",
+          "ParameterType": "global::Sungero.Projects.IProjectTeam",
+          "ParameterTypeFullName": "Sungero.Projects.IProjectTeam, Sungero.Domain.Interfaces"
+        },
+        {
+          "NameGuid": "f6ef2dbb-09f6-460f-8499-83455fa9b5b0",
+          "Name": "member",
+          "ParameterType": "global::Sungero.CoreEntities.IRecipient",
+          "ParameterTypeFullName": "Sungero.CoreEntities.IRecipient, Sungero.Domain.Shared"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    }
+  ],
+  "ResourcesKeys": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "668b6176-6773-402c-b4bd-457d66ba97cd",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "8177c638-4c77-419a-861a-70a3baae5ab6",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 8
+    }
+  ]
+}

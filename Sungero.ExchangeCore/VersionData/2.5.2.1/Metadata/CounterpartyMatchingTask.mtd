@@ -1,0 +1,86 @@
+{
+  "$type": "Sungero.Metadata.TaskMetadata, Sungero.Workflow.Shared",
+  "NameGuid": "161f3b1d-2a16-4add-b785-efac0d0b908b",
+  "Name": "CounterpartyMatchingTask",
+  "AccessRightsMode": "Both",
+  "BaseGuid": "d795d1f6-45c1-4e5e-9677-b53fb7280c7e",
+  "CanBeNavigationPropertyType": true,
+  "CanBeSearch": false,
+  "CreationAreaMetadata": {
+    "NameGuid": "8d829390-c6cf-4b00-b846-412f2d086650",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "bd0a4ce3-3467-48ad-b905-3820bf6b9da6",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true
+  },
+  "IconResourcesKeys": [],
+  "IsAutoCreated": true,
+  "IsVisibleThreadText": true,
+  "NeverLinkToParentWhenCreated": true,
+  "OperationsClass": "",
+  "Overridden": [
+    "CanBeSearch",
+    "IsAutoCreated"
+  ],
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "cd7cf7cb-3b20-43b5-afcd-5717a94e93e8",
+      "Name": "Counterparties",
+      "Code": "CounterpartyMa",
+      "EntityGuid": "049240db-7be8-4ab4-836a-35690fbdf6c4",
+      "IsShowedInList": false,
+      "PreviousPropertyGuid": "e5e944f2-e530-487a-a480-b111c31fa70e"
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "3200e3ea-bd95-43dd-82ee-139fd88c68d2",
+      "Name": "Box",
+      "Code": "BoxCM",
+      "EntityGuid": "2dd7a803-8db7-40e1-9da6-b41c62d367c8",
+      "FlatListInStandaloneLookup": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "cd7cf7cb-3b20-43b5-afcd-5717a94e93e8"
+    }
+  ],
+  "ResourcesKeys": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "bec636cd-30b1-4dde-9655-d595105c3884",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "35dc434d-cfec-4d17-a9b6-bba567862a2d",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "TaskMetadata",
+      "Number": 1
+    },
+    {
+      "Type": "WorkflowEntityMetadata",
+      "Number": 2
+    },
+    {
+      "Type": "EntityMetadata",
+      "Number": 8
+    }
+  ]
+}

@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TaskSubject" xml:space="preserve">
+    <value>Action item:</value>
+  </data>
+  <data name="ControlNoticeSubject" xml:space="preserve">
+    <value>You are appointed as a supervisor for the action item:</value>
+  </data>
+  <data name="ActionItemsNotFilled" xml:space="preserve">
+    <value>Add at least one part of action item to the compound action item.</value>
+  </data>
+  <data name="WorkFromActionItemIsCompleted" xml:space="preserve">
+    <value>Action item is executed by assignee {0}:</value>
+  </data>
+  <data name="ControlWorkFromJob" xml:space="preserve">
+    <value>Accept work:</value>
+  </data>
+  <data name="SubjectWithDocument" xml:space="preserve">
+    <value> {0}</value>
+  </data>
+  <data name="SentToCoAssignee" xml:space="preserve">
+    <value>Sent to co-assignee.</value>
+  </data>
+  <data name="WorkFromActionItemIsAccepted" xml:space="preserve">
+    <value>Work accepted:</value>
+  </data>
+  <data name="NoticeSubjectWithoutDoc" xml:space="preserve">
+    <value>Execution stopped</value>
+  </data>
+  <data name="DeadlineSubActionItemExecution" xml:space="preserve">
+    <value>Deadline date of the current action item must be less than deadline date of the parent one - {0}.</value>
+  </data>
+  <data name="NumberIsNotPositive" xml:space="preserve">
+    <value>Sequence numbers must be positive integers.</value>
+  </data>
+  <data name="ActionItemExecutionSubject" xml:space="preserve">
+    <value>Execute:</value>
+  </data>
+  <data name="OnControl" xml:space="preserve">
+    <value>Action item is under control. Supervisor - {0}. </value>
+  </data>
+  <data name="YouAreAdditionalAssignee" xml:space="preserve">
+    <value>You are assigned as a co-assignee.</value>
+  </data>
+  <data name="YouAreResponsibleAssignee" xml:space="preserve">
+    <value>You are assigned as a responsible assignee.</value>
+  </data>
+  <data name="YouAreAssignee" xml:space="preserve">
+    <value>You are assigned as an assignee.</value>
+  </data>
+  <data name="OnControlWithResponsible" xml:space="preserve">
+    <value>Action item controlled by {0}. </value>
+  </data>
+  <data name="ActionItemReworkSubject" xml:space="preserve">
+    <value>Correct remarks:</value>
+  </data>
+  <data name="NoActiveChildActionItems" xml:space="preserve">
+    <value>There are no active child action items now.</value>
+  </data>
+  <data name="ComponentActionItemExecutionSubject" xml:space="preserve">
+    <value>Compound action item:</value>
+  </data>
+  <data name="StopAdditionalActionItemExecutions" xml:space="preserve">
+    <value>Stop execution of child action items?</value>
+  </data>
+  <data name="StopAdditionalActionItemExecutionsDescription" xml:space="preserve">
+    <value>Incomplete child action items found. Execution of child action items can be stopped.</value>
+  </data>
+  <data name="AutoAbortingReason" xml:space="preserve">
+    <value>Action item was aborted automatically as the parent action item was executed.</value>
+  </data>
+  <data name="AllowableLengthAssignmentsCharacters" xml:space="preserve">
+    <value>Name of an action item can be {0} characters long.</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="WorkFromActionItemIsCreated" xml:space="preserve">
+    <value>Work started:</value>
+  </data>
+  <data name="StateViewActionItemOnExecution" xml:space="preserve">
+    <value>Action item has been sent for execution</value>
+  </data>
+  <data name="StateViewSubordinateActionItemSent" xml:space="preserve">
+    <value>Subordinate action item has been assigned</value>
+  </data>
+  <data name="StateViewNotSpecified" xml:space="preserve">
+    <value>Not Specified</value>
+  </data>
+  <data name="ActionItem" xml:space="preserve">
+    <value>Action Item</value>
+  </data>
+  <data name="StateViewCompoundActionItem" xml:space="preserve">
+    <value>Compound action item</value>
+  </data>
+  <data name="StateViewActionItemForCoAssignee" xml:space="preserve">
+    <value>Action item to co-assignee</value>
+  </data>
+  <data name="StateViewActionItemForResponsible" xml:space="preserve">
+    <value>Action item to responsible assignee</value>
+  </data>
+  <data name="StateViewActionItemPart" xml:space="preserve">
+    <value>Action item part No.</value>
+  </data>
+  <data name="StateViewReport" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="StateViewActionItem" xml:space="preserve">
+    <value>Action item</value>
+  </data>
+  <data name="ActionItemCanNotAssignedByUser" xml:space="preserve">
+    <value>In the "Assigned by" field you can specify only your name, your manager, employee you substitute for, or his or her manager.</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CompoundActionItem" type="System.Byte[], mscorlib">
+    <value>
+        AAABAAIAICAAAAEAIACoEAAAJgAAABAQAAABACAAaAQAAM4QAAAoAAAAIAAAAEAAAAABACAAAAAAAIAQ
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOGiUCjholGo4aJTCOGiU9zholP84aJT/OGiU9Tho
+        lLw4aJRiOGiUBgAAAAAAAAAAAAAAAAAAAACUlJTglJSU/5SUlPuUlJT7lJSU+5SUlP+UlJT/lJSU/5SU
+        lP+UlJT/lJSU/5SUlP+UlJT/lJSU/5SUlP+UlJT/lJSUGDholEI4aJTiOGiU/zholP84aJT/SHSc/0dz
+        nP84aJT/OGiU/zholP84aJTbOGiUPAAAAAAAAAAAAAAAAJSUlP+UlJT/lJSU/5SUlP+UlJT/lJSU/5SU
+        lP+UlJT/lJSU/5SUlP+UlJT/lJSU/5SUlP+UlJT/lJSUs5SUlCY4aJRhOGiU+zholP9ukbH/ucva//j6
+        +/////////////b5+v+zxdf/a4+v/zholP84aJT5OGiUVQAAAAAAAAAAlJSU/5SUlP//////////////
+        ////////////////////////////////////////////////////////yNXh/zpqlf84aJT/hqO+////
+        ////////////////////////////////////////haK9/zholP84aJT1OGiUNgAAAACUlJT/lJSU////
+        //////////////////////////////////////////////////////////////b5+v9NeJ//OGiU/4ek
+        vv//////////////////////////////////////////////////////gqC7/zholP84aJTXOGiUBJSU
+        lP+UlJT/////////////////////////////////////////////////////////////////rMDT/zho
+        lP9vkrL/////////////////////////////////////////////////////////////////ao6v/zho
+        lP84aJRalJSU/5SUlP//////////////////////////////////////////////////////////////
+        //9qjq//OGiU/7jK2v//////////////////////////////////////////////////////////////
+        //+swNP/OGiU/zholLKUlJT/lJSU////////////////////////////////////////////////////
+        /////////////z1sl/84aJT/+fr8////////////////////////////////////////////////////
+        /////////////+vw9P84aJT/OGiU5pSUlP+UlJT/////////////////////////////////////////
+        ///////////////////u8vb/OGiU/0h0nf////////////////////////////////+UlJT/lJSU/5SU
+        lP+UlJT/lJSU/5SUlP///////f3+/zholP84aJT9lJSU/5SUlP//////////////////////////////
+        /////////////////////////////+rv9P84aJT/THef/////////////////////////////////5SU
+        lP+UlJT/lJSU/5SUlP+UlJT/lJSU////////////PGuW/zholP+UlJT/lJSU////////////////////
+        /////////////////////////////////////////P39/z1slv84aJT/+Pr7////////////////////
+        ////////lJSU/5SUlP///////////////////////////+3x9f84aJT/OGiU6ZSUlP+UlJT/////////
+        ////////////////////////////////////////////////////////bpGx/zholP+3ydn/////////
+        //////////////////+UlJT/lJSU////////////////////////////qb3R/zholP84aJSvlJSU/5SU
+        lP////////////////////////////////////////////////////////////////+twdT/OGiU/26R
+        sf///////////////////////////5SUlP+UlJT///////////////////////////9njK3/OGiU/zho
+        lFWUlJT/lJSU//////////////////////////////////////////////////////////////////j6
+        +/9QeqH/OGiU/4ekvv//////////////////////lJSU/5SUlP//////////////////////gqC7/zho
+        lP84aJTTOGiUA5SUlP+UlJT/////////////////////////////////////////////////////////
+        /////////////8rX4/86apX/OGiU/4Sivf////////////////+UlJT/lJSU/////////////////4Gf
+        u/84aJT/OGiU9TholC4AAAAAlJSU/5SUlP//////////////////////////////////////////////
+        /////////////////////////////7bI2P89bJf/OGiU/2mNrv+vwtX/8fT4////////////7PH1/6m9
+        0f9jiav/OGiU/0Fumf84aJRKAAAAAAAAAACUlJT/lJSU////////////////////////////////////
+        /////////////////////////////////////////////9Hc5v9Xf6T/OGiU/zholP84aJT/QnCZ/0Fv
+        mf84aJT/OGiU/zholP9ehaj/2uPr/wAAAAAAAAAAAAAAAJSUlP+UlJT/////////////////////////
+        //////////////////////////////////////////////////////////////z9/f+1yNj/dJa0/0Nw
+        mv84aJT/OGiU/0Vym/95mbf/vM3c//3+/v//////lJSU/wAAAAAAAAAAlJSU/5SUlP//////////////
+        //////////////////////////////////////////////////////////////////////////////7+
+        /v/9/f3///////T3+f/19/r//////////////////////5SUlP+UlJT/AAAAAAAAAACUlJT/lJSU/5SU
+        lP+UlJT/lJSU/5SUlP+UlJT/lJSU/5SUlP+UlJT/lJSU/5SUlP+UlJT/lJSU/5SUlP+UlJT/lJSU/5SU
+        lP+UlJT/lJSU/5SUlP//////////////////////////////////////lJSU/5SUlP8AAAAAAAAAAJSU
+        lP+UlJT/lJSU/5SUlP+UlJT/lJSU/5SUlP+UlJT/lJSU/5SUlP+UlJT/lJSU/5SUlP+UlJT/lJSU/5SU
+        lP+UlJT/lJSU/5SUlP+UlJT/lJSU//////////////////////////////////////+UlJT/lJSU/wAA
+        AAAAAAAAlJSU/5SUlP+UlJT/9PT0///////09PT/lJSU/5SUlP+UlJT/lJSU/5SUlP+UlJT/lJSU/5SU
+        lP+VlZX/9PT0///////09PT/lJSU/5SUlP+UlJT//////////////////////////////////////5SU
+        lP+UlJT/AAAAAAAAAACUlJT/lJSU/5SUlP//////lJSU//////+UlJT/lJSU/5SUlP+UlJT/lJSU/5SU
+        lP+UlJT/lJSU/5iYmP//////lJSU//////+UlJT/lJSU/5SUlP//////////////////////////////
+        ////////lJSU/5SUlP8AAAAAAAAAAJSUlM2UlJT/lJSU/wAAAACUlJT/AAAAAJSUlP+UlJT/lJSU/5SU
+        lP+UlJT/lJSU/5SUlP+UlJT/mJiY//////+UlJT//////5SUlP+UlJT/t7e3////////////////////
+        //////////////////+UlJT/lJSU/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJSUlP8AAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD//////////////////////////5SUlP//////////////////////////////
+        /////////////////////////////5SUlP+UlJT/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAACUlJT/lJSU////////////////////////////////////////////////////
+        ////////////////////////////////////////lJSU/5SUlP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAJSUlP+UlJT/lJSU/5SUlP+UlJT/lJSU/5SUlP+UlJT/lJSU/5SU
+        lP+UlJT/lJSU/5SUlP+UlJT/lJSU/5SUlP+UlJT/lJSU/5SUlP+UlJT/lJSU/wAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlJSU/5SUlP+UlJT/lJSU/5SUlP+UlJT/lJSU/5SU
+        lP+UlJT/lJSU/5SUlP+UlJT/lJSU/5SUlP+UlJT/lJSU/5SUlP+UlJT/lJSU/5SUlP+UlJT/AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACUlJT/lJSU/5SUlP/09PT///////T0
+        9P+UlJT/lJSU/5SUlP+UlJT/lJSU/5SUlP+UlJT/lJSU/5WVlf/09PT///////T09P+UlJT/lJSU/5SU
+        lP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJSUlP+UlJT/lJSU////
+        //+UlJT//////5SUlP+UlJT/lJSU/5SUlP+UlJT/lJSU/5SUlP+UlJT/mJiY//////+UlJT//////5SU
+        lP+UlJT/lJSU/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlJSUzZSU
+        lP+UlJT/AAAAAJSUlP8AAAAAlJSU/5SUlP+UlJT/lJSU/5SUlP+UlJT/lJSU/5SUlP+UlJT2AAAAAJSU
+        lP8AAAAAlJSU/5SUlP+UlJSqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAlJSU/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAlJSU/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//wA8AAAAHAAAAAwAAAAEAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAMAAAAHAAAAAwAAAAMAAAADAAAAAwAA
+        AAMAAAADFAAAA/fgAAP/gAAD/4AAA/+AAAP/gAAD/4AAA/+KAKP/+/+/KAAAABAAAAAgAAAAAQAgAAAA
+        AABABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADho
+        lKo4aJTcOGiU/zholNw4aJSoAAAAAAAAAAAAAAAAfHx85Hx8fP98fHz/fHx8/3x8fP98fHz/AAAAADho
+        lN+DoLz/6O7z//z9/f/o7vP/g6C8/zholNwAAAAAAAAAAHx8fP///////////////////////////3qa
+        t/+DoLz///////////////////////////+DoLz/OGiUpQAAAAB8fHz/////////////////////////
+        //9TfaP/6O7z////////////////////////////6O7z/zholO8AAAAAfHx8////////////////////
+        ////////OGiU//z9/f///////////4GBgf+BgYH/gYGB//z9/f84aJT+AAAAAHx8fP//////////////
+        /////////////0Jwmf/o7vP///////////+BgYH////////////o7vP/OGiU8AAAAAB8fHz/////////
+        //////////////////9tkLD/g6C8////////////gYGB////////////g6C8/zholLkAAAAAfHx8////
+        /////////////////////////////1F7of+DoLz/6O7z//z9/f/o7vP/g6C8/z1sluQAAAAAAAAAAHx8
+        fP//////////////////////////////////////epq3/1N9o/84aJT/U32j/3qat/////8lAAAAAAAA
+        AAB8fHz/////////////////////////////////////////////////////////////////fHx8/wAA
+        AAAAAAAAfHx8/////////////////////////////////////////////////3x8fP///////////3x8
+        fP8AAAAAAAAAAHx8fP98fHz/fHx8/3x8fP98fHz/fHx8/3x8fP98fHz/fHx8/3x8fP98fHz/////////
+        //98fHz/AAAAAAAAAAB8fHzffHx8/wAAAAB8fHz/gICA/4CAgP+AgID/fHx8//////98fHz/lpaW////
+        ////////fHx8/wAAAAAAAAAAAAAAAAAAAAAAAAAAfHx8Af//////////////////////////////////
+        /////////////3x8fP8AAAAAAAAAAAAAAAAAAAAAAAAAAHx8fP98fHz/fHx8/3x8fP98fHz/fHx8/3x8
+        fP98fHz/fHx8/3x8fP98fHz/AAAAAAAAAAAAAAAAAAAAAAAAAAB8fHzLfHx8/wAAAAB8fHz/fHx8/3x8
+        fP98fHz/fHx8/wAAAAB8fHz/fHx8xgAAAAD/gwAAgQEAAIAAAACAAAAAgAAAAIAAAACAAAAAgAEAAIAB
+        AACAAQAAgAEAAIABAACQAQAA8AEAAPABAADyCQAA
+</value>
+  </data>
+  <data name="SubtaskSubjectPostfix" xml:space="preserve">
+    <value> "{0}" for</value>
+  </data>
+  <data name="WillBeSentAfterApprove" xml:space="preserve">
+    <value>Action item will be sent after draft resolution is approved by manager.</value>
+  </data>
+  <data name="WillBeAddToDocumentReviewTask" xml:space="preserve">
+    <value>Action item will be attached to task to review by manager and sent for execution after draft resolution is approved.</value>
+  </data>
+  <data name="EmptyActionItem" xml:space="preserve">
+    <value>Fill in the text in the action item or in the table.</value>
+  </data>
+  <data name="EmptyFinalDeadline" xml:space="preserve">
+    <value>Fill in the final deadline or deadline in the table.</value>
+  </data>
+  <data name="DefaultActionItem" xml:space="preserve">
+    <value>Complete the action item.</value>
+  </data>
+  <data name="BigGroupWarning" xml:space="preserve">
+    <value>You can fill in performers from a group that does not include more than {0} employees.</value>
+  </data>
+  <data name="WorkFromActionItemIsCreatedCompound" xml:space="preserve">
+    <value>Work started: compound action item</value>
+  </data>
+  <data name="ChangeCompoundModeQuestion" xml:space="preserve">
+    <value>Do you want to send a simple action item?</value>
+  </data>
+  <data name="ChangeCompoundModeDescription" xml:space="preserve">
+    <value>The performers will be moved to the simple action item.
+Action items parts and deadlines will be deleted from the table.</value>
+  </data>
+  <data name="EmptyAbortingReason" xml:space="preserve">
+    <value>Specify the reason for task abortion.</value>
+  </data>
+  <data name="ActionItemAsigneeTooMatch" xml:space="preserve">
+    <value>There are more than {0} performers of the action item. Divide the action item into several tasks.</value>
+  </data>
+  <data name="ActionItemWithNumberThreadSubject" xml:space="preserve">
+    <value>Action item part</value>
+  </data>
+  <data name="CompoundActionItemThreadSubject" xml:space="preserve">
+    <value>Compound action item</value>
+  </data>
+  <data name="ActionItemExecutionNotificationThreadSubject" xml:space="preserve">
+    <value>Notice about action item execution</value>
+  </data>
+  <data name="ActionItemThreadSubject" xml:space="preserve">
+    <value>Action item</value>
+  </data>
+  <data name="SelectDepartmentOrRole" xml:space="preserve">
+    <value>Select Department or Role</value>
+  </data>
+</root>

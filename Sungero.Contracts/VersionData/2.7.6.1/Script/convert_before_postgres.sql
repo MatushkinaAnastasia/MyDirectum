@@ -1,0 +1,1 @@
+﻿ALTER INDEX IF EXISTS public.idx_ElectronicDocument_LifeCycleState_Discriminator_RespEmpl RENAME TO idx_EDoc_LifeCycleState_Discriminator_RespEmpl;

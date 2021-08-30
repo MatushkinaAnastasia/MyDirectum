@@ -1,0 +1,44 @@
+{
+  "$type": "Sungero.Metadata.ReportMetadata, Sungero.Reporting.Shared",
+  "NameGuid": "364f31f6-04da-4bb4-b668-8c061a1f7688",
+  "Name": "ApprovalRuleConditionReport",
+  "AccessRightsMode": "NoRight",
+  "AssociatedGuid": "42a6a084-6828-47d9-95bb-50b0538a6037",
+  "BaseGuid": "cef9a810-3f30-4eca-9fe3-30992af0b818",
+  "DataSources": [],
+  "DefaultExportFormat": "Word",
+  "ExportFormats": [
+    "Word"
+  ],
+  "HandledEvents": [
+    "AfterExecuteServer",
+    "BeforeExecuteServer"
+  ],
+  "IconResourcesKeys": [],
+  "Overridden": [
+    "AccessRightsMode",
+    "PublicConstants",
+    "PublicStructures",
+    "ExportFormats",
+    "DefaultExportFormat",
+    "HandledEvents",
+    "Parameters"
+  ],
+  "Parameters": [
+    {
+      "NameGuid": "1bfd6cab-d751-43e8-82e0-d2e9102edf72",
+      "Name": "Entity",
+      "EntityType": "42a6a084-6828-47d9-95bb-50b0538a6037",
+      "InternalDataTypeName": "Sungero.Docflow.IApprovalRuleBase, Sungero.Domain.Interfaces",
+      "IsRequired": true
+    },
+    {
+      "NameGuid": "08767bf7-1344-4596-b21e-5a2fab9985c6",
+      "Name": "ReportSessionId",
+      "InternalDataTypeName": "System.String"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "Versions": []
+}

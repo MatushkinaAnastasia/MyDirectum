@@ -1,0 +1,220 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "f7b1d5b7-5af1-4a9f-b4d7-4e18840d7195",
+  "Name": "Integration1C",
+  "ClientAssemblyName": "Sungero.Integration1C.Client",
+  "ClientBaseAssemblyName": "Sungero.Integration1C.ClientBase",
+  "ClientBaseNamespace": "Sungero.Integration1C.ClientBase",
+  "ClientNamespace": "Sungero.Integration1C.Client",
+  "Code": "Int1C",
+  "CompanyCode": "Sungero",
+  "Cover": {
+    "NameGuid": "1c4f34fe-bc13-4b32-b369-5aef2c89094a",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "9cebe257-629c-42d7-bffa-4f17a1afb05c",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "335ef5f5-358c-41e9-bdd2-2a32fe91a04c",
+      "BackgroundPosition": "Stretch"
+    }
+  },
+  "Dependencies": [
+    {
+      "Id": "e4fe1153-919e-4732-aadc-2c8e9b5c0b5a",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    },
+    {
+      "Id": "ec7b606a-21ee-4f16-aba8-ab8c2af76d12",
+      "MaxVersion": "",
+      "MinVersion": "0.0.1.0"
+    },
+    {
+      "Id": "92491aa6-c4df-4f46-a807-ebdd337bda74",
+      "MaxVersion": "",
+      "MinVersion": "1.1.0.0"
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "Sungero.Integration1C",
+  "IsLicensed": true,
+  "IsVisible": false,
+  "Overridden": [
+    "IsLicensed",
+    "IsVisible"
+  ],
+  "PublicFunctions": [
+    {
+      "NameGuid": "ac2db283-95de-42f7-8c37-7d817476f215",
+      "Name": "GetTodayDocument",
+      "Parameters": [
+        {
+          "NameGuid": "6d5e5a42-3b78-4e7b-adae-d6c0c3ee6917",
+          "Name": "fileExist",
+          "ParameterType": "global::System.Boolean",
+          "ParameterTypeFullName": "System.Boolean"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::Sungero.Docflow.ISimpleDocument",
+      "ReturnTypeFullName": "Sungero.Docflow.ISimpleDocument, Sungero.Domain.Interfaces"
+    },
+    {
+      "NameGuid": "7f39d24d-b9e4-4ff0-a7ed-37e4134ae7b6",
+      "Name": "IsSummaryProtocolExist",
+      "Placement": "Shared",
+      "ReturnType": "global::System.Boolean",
+      "ReturnTypeFullName": "System.Boolean"
+    },
+    {
+      "NameGuid": "ec7ffbdd-718b-4f48-bc27-7d6ca1b6dc06",
+      "Name": "GetChangedEntitiesFromSyncDate",
+      "Parameters": [
+        {
+          "NameGuid": "c6961fac-8580-4f73-897f-c162ad1b6d05",
+          "Name": "entityTypeGuids",
+          "ParameterType": "global::System.Collections.Generic.List<global::System.Guid>",
+          "ParameterTypeFullName": "System.Collections.Generic.List"
+        },
+        {
+          "NameGuid": "0f9c4b1a-6b28-47b0-9a8d-084bbb43111d",
+          "Name": "processedEntitiesCount",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        },
+        {
+          "NameGuid": "f3e93009-0d5a-4784-b702-0dfc346cf736",
+          "Name": "entitiesCountForProcessing",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        },
+        {
+          "NameGuid": "bb241a54-985c-4469-a995-3423aa53f79b",
+          "Name": "extEntityType",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "NameGuid": "29705a86-eab3-4ad9-a408-e5e2de0173ff",
+          "Name": "systemId",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.Collections.Generic.List<global::Sungero.Domain.Shared.IEntity>",
+      "ReturnTypeFullName": "System.Collections.Generic.List"
+    },
+    {
+      "NameGuid": "a93d1cbd-1494-4c14-8c18-e4a824ecbe83",
+      "Name": "SendNotificationBySimpleTaskRemote",
+      "Parameters": [
+        {
+          "NameGuid": "4a689490-2cc6-40f4-a2f0-a2b8c332150c",
+          "Name": "title",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "NameGuid": "6f1ed067-c9ce-4491-86dc-577cabf9eb26",
+          "Name": "text",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "NameGuid": "f0a177dc-b0b5-47dd-8715-2552192496e8",
+      "Name": "UpdateLastNotificationDateRemote",
+      "Parameters": [
+        {
+          "NameGuid": "d3ff084c-9895-4bbf-b34b-29d6dc24037f",
+          "Name": "date",
+          "ParameterType": "global::System.DateTime",
+          "ParameterTypeFullName": "System.DateTime"
+        },
+        {
+          "NameGuid": "7c433ede-0f9d-49ed-bd84-20f02638a468",
+          "Name": "systemId",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "NameGuid": "853a2372-1e2c-4ffd-9e1f-3bfff7762efa",
+      "Name": "GetLastNotificationDateRemote",
+      "Parameters": [
+        {
+          "NameGuid": "859804b2-d36d-4908-81fc-7b78bea5b4e1",
+          "Name": "systemId",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String"
+    },
+    {
+      "NameGuid": "0fa8aede-ff03-4558-a804-bf628a07566f",
+      "Name": "GetChangedEntitiesFromSyncDateCount",
+      "Parameters": [
+        {
+          "NameGuid": "ade50f90-3cde-4dac-8884-0dafe207eed8",
+          "Name": "entityTypeGuids",
+          "ParameterType": "global::System.Collections.Generic.List<global::System.Guid>",
+          "ParameterTypeFullName": "System.Collections.Generic.List"
+        },
+        {
+          "NameGuid": "730910f1-f581-4230-a3ee-4da2135ff2d2",
+          "Name": "extEntityType",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "NameGuid": "68608b9a-cfa7-4c32-860f-85540487a112",
+          "Name": "systemId",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.Int32",
+      "ReturnTypeFullName": "System.Int32"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "Sungero.Integration1C",
+  "ResourcesKeys": [
+    "Synchronization1CResponsibleRoleName",
+    "Synchronization1CResponsibleRoleDescription"
+  ],
+  "ServerAssemblyName": "Sungero.Integration1C.Server",
+  "ServerNamespace": "Sungero.Integration1C.Server",
+  "SharedAssemblyName": "Sungero.Integration1C.Shared",
+  "SharedNamespace": "Sungero.Integration1C.Shared",
+  "SpecialFolders": [],
+  "Version": "2.8.9.3",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 6
+    }
+  ]
+}

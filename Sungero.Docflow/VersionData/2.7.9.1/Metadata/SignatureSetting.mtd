@@ -1,0 +1,99 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "1e5b7d38-73c6-49d4-8782-e4dab2e1c387",
+  "Name": "SignatureSetting",
+  "BaseGuid": "19f9b6d8-b072-4af0-b6e1-3f8a339506be",
+  "CanBeNavigationPropertyType": true,
+  "CreationAreaMetadata": {
+    "NameGuid": "f7766750-eee2-4fcd-8003-5c06a90d1f44",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "b0125fbd-3b91-4dbb-914a-689276216404",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true
+  },
+  "IconName": "SignatureSetting.ico",
+  "IconResourcesKeys": [],
+  "IsVisible": false,
+  "OperationsClass": "",
+  "Overridden": [
+    "IsVisible",
+    "IconName"
+  ],
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "bd2b202a-353f-4aa4-aece-903e7d3603b4",
+      "Name": "DocumentKinds",
+      "Code": "SignKinds",
+      "EntityGuid": "5089fadc-19e5-470c-bdb1-b30a574e41b0",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "EntityGuid"
+      ]
+    },
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "2de1b94f-4c03-41d4-bbcc-1f76eab435e9",
+      "Name": "BusinessUnits",
+      "Code": "SignBizUnits",
+      "EntityGuid": "09193957-4439-43ae-9ee6-d8e88e40d557",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "EntityGuid"
+      ]
+    }
+  ],
+  "PublicFunctions": [
+    {
+      "NameGuid": "0aac19e2-5f46-4806-9ba9-2d8a3a244c93",
+      "Name": "UpdateBusinessUnitSetting",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "NameGuid": "d6a75b04-965e-471e-90b5-adbb3615c9dd",
+          "Name": "unit",
+          "ParameterType": "global::Sungero.Company.IBusinessUnit",
+          "ParameterTypeFullName": "Sungero.Company.IBusinessUnit, Sungero.Domain.Interfaces"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [
+    "DefaultSignatureSettingNote"
+  ],
+  "RibbonCardMetadata": {
+    "NameGuid": "4fbc64bb-e3f7-464d-96aa-25da10f6a07f",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "a41a44d2-1bab-4a43-882e-a2e4fd876ff8",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 9
+    }
+  ]
+}

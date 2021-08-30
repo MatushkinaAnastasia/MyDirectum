@@ -1,0 +1,173 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "59797aba-7718-45df-8ac1-5bb7a36c7a66",
+  "Name": "FinancialArchive",
+  "ClientAssemblyName": "Sungero.FinancialArchive.Client",
+  "ClientBaseAssemblyName": "Sungero.FinancialArchive.ClientBase",
+  "ClientBaseNamespace": "Sungero.FinancialArchive.ClientBase",
+  "ClientNamespace": "Sungero.FinancialArchive.Client",
+  "Code": "FinArch",
+  "CompanyCode": "Sungero",
+  "Cover": {
+    "NameGuid": "92f52917-55e5-4c84-990f-66a7e1d44aa5",
+    "Actions": [
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "2753003a-067d-4d3d-95e7-a1e016d356b8",
+        "Name": "AllContractualDocuments",
+        "EntityTypeId": "454df3c6-b850-47cf-897f-a10d767baa77",
+        "GroupId": "4d293281-21ac-4284-81f5-9c76529c7ea2",
+        "PreviousItemGuid": "40c65841-6c4b-4e1b-8b91-458bc4b38c1f"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "40c65841-6c4b-4e1b-8b91-458bc4b38c1f",
+        "Name": "AllFinancialDocuments",
+        "EntityTypeId": "96c4f4f3-dc74-497a-b347-e8faf4afe320",
+        "GroupId": "4d293281-21ac-4284-81f5-9c76529c7ea2",
+        "PreviousItemGuid": "567f6a00-5d05-46c2-ad70-648e8d9edc89"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "567f6a00-5d05-46c2-ad70-648e8d9edc89",
+        "Name": "CreateDocument",
+        "FunctionName": "CreateFinancialDocument",
+        "GroupId": "4d293281-21ac-4284-81f5-9c76529c7ea2"
+      }
+    ],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "a6c2ae31-f627-41f9-b165-c7aae837dddb",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [
+      {
+        "NameGuid": "4d293281-21ac-4284-81f5-9c76529c7ea2",
+        "Name": "Documents",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconDocuments_4d29328121ac428481f59c76529c7ea2.ico"
+      },
+      {
+        "NameGuid": "ac76066e-d4e7-40ac-a5e4-cf57ce6828a9",
+        "Name": "Reports",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconReports_ac76066ed4e740aca5e4cf57ce6828a9.ico",
+        "PreviousItemGuid": "4d293281-21ac-4284-81f5-9c76529c7ea2"
+      },
+      {
+        "NameGuid": "1dac245d-1d77-4e71-9919-cd66b3357842",
+        "Name": "Search",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconSearch_1dac245d1d774e719919cd66b3357842.ico",
+        "PreviousItemGuid": "ac76066e-d4e7-40ac-a5e4-cf57ce6828a9"
+      }
+    ],
+    "Header": {
+      "NameGuid": "3509d115-6227-4916-971e-075291cf7c7d",
+      "BackgroundPosition": "Stretch"
+    }
+  },
+  "Dependencies": [
+    {
+      "Id": "e4fe1153-919e-4732-aadc-2c8e9b5c0b5a",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    },
+    {
+      "Id": "f9d15b1c-2784-4c84-8348-1e162d70b988",
+      "MinVersion": "2.5.20.0"
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "27c2134e-e142-44a3-8012-7259c26b62b7"
+    },
+    {
+      "ItemId": "74c9ddd4-4bc4-42b6-8bb0-c91d5e21fb8a",
+      "PreviousItemId": "27c2134e-e142-44a3-8012-7259c26b62b7"
+    },
+    {
+      "ItemId": "f50c4d8a-56bc-43ef-bac3-856f57ca70be",
+      "PreviousItemId": "74c9ddd4-4bc4-42b6-8bb0-c91d5e21fb8a"
+    },
+    {
+      "ItemId": "4e81f9ca-b95a-4fd4-bf76-ea7176c215a7",
+      "PreviousItemId": "f50c4d8a-56bc-43ef-bac3-856f57ca70be"
+    },
+    {
+      "ItemId": "6d6f0b90-d75f-4a49-a5b0-d4632aac2946",
+      "PreviousItemId": "4e81f9ca-b95a-4fd4-bf76-ea7176c215a7"
+    },
+    {
+      "ItemId": "f2f5774d-5ca3-4725-b31d-ac618f6b8850",
+      "PreviousItemId": "6d6f0b90-d75f-4a49-a5b0-d4632aac2946"
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "Sungero.FinancialArchive",
+  "Overridden": [
+    "IsLicensed"
+  ],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "Sungero.FinancialArchive",
+  "ResourcesKeys": [
+    "RoleNameFinancialArchiveResponsible",
+    "DescriptionFinancialArchiveResponsible",
+    "Counterparty",
+    "RegistrationDateFrom",
+    "RegistrationDateTo"
+  ],
+  "ServerAssemblyName": "Sungero.FinancialArchive.Server",
+  "ServerNamespace": "Sungero.FinancialArchive.Server",
+  "SharedAssemblyName": "Sungero.FinancialArchive.Shared",
+  "SharedNamespace": "Sungero.FinancialArchive.Shared",
+  "SpecialFolders": [
+    {
+      "NameGuid": "27c2134e-e142-44a3-8012-7259c26b62b7",
+      "Name": "FinancialDocuments",
+      "DefaultContentType": "96c4f4f3-dc74-497a-b347-e8faf4afe320",
+      "DisplayType": "Module",
+      "FilterPanel": {
+        "NameGuid": "55553934-7484-4a07-a573-8129cd7c1424",
+        "Name": "FilterPanel",
+        "Controls": [
+          {
+            "$type": "Sungero.Metadata.FilterGroupMetadata, Sungero.Metadata",
+            "NameGuid": "430df7c1-8a0b-4e05-a83e-ebc14c35cc5e",
+            "Name": "Main"
+          }
+        ]
+      },
+      "IsShow": true,
+      "Kind": "Computable",
+      "NeedShowMarkedCount": false,
+      "OpenCardByDefault": true
+    },
+    {
+      "NameGuid": "6d6f0b90-d75f-4a49-a5b0-d4632aac2946",
+      "Name": "Contracts",
+      "DefaultContentType": "f37c7e63-b134-4446-9b5b-f8811f6c9666",
+      "DisplayType": "Module",
+      "FilterPanel": {
+        "NameGuid": "0027cb68-bbd2-4444-a4ae-a1f9c53d4311",
+        "Name": "FilterPanel",
+        "Controls": []
+      },
+      "IsShow": true,
+      "Kind": "Computable",
+      "NeedShowMarkedCount": false,
+      "OpenCardByDefault": true
+    }
+  ],
+  "Version": "2.6.0.1",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 3
+    }
+  ]
+}

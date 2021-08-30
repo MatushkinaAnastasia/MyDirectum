@@ -1,0 +1,236 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "593e143c-616c-4d95-9457-fd916c4aa7f8",
+  "Name": "Company",
+  "BaseGuid": "78278dd7-f0d2-4e35-b543-13d0bd462cd6",
+  "CanBeNavigationPropertyType": true,
+  "CanBeSearch": true,
+  "CreationAreaMetadata": {
+    "NameGuid": "308b66c0-28e9-4beb-bf43-03fc550c1468",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "b0125fbd-3b91-4dbb-914a-689276216404",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true,
+    "IsEnabled": false,
+    "Overridden": [
+      "IsEnabled"
+    ]
+  },
+  "Forms": [
+    {
+      "$type": "Sungero.Metadata.StandaloneFormMetadata, Sungero.Metadata",
+      "NameGuid": "026f3b94-a2e4-47bc-a270-d900853f782e",
+      "Name": "Card",
+      "Controls": [],
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "UseAncestorControls"
+      ]
+    }
+  ],
+  "IconResourcesKeys": [],
+  "OperationsClass": "",
+  "Overridden": [
+    "IsVisible",
+    "CanBeSearch"
+  ],
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "78b9f52c-febf-4a73-89ae-c7a4723e3944",
+      "Name": "Region",
+      "Code": "Region",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "PreviousPropertyGuid"
+      ],
+      "PreviousPropertyGuid": "93db464a-c19f-441c-bf41-7ad6b9ea2fb5"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "c0fedb36-4bff-4978-a39e-ee43154bc84b",
+      "Name": "LegalAddress",
+      "Code": "LegalAddress",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "PreviousPropertyGuid"
+      ],
+      "PreviousPropertyGuid": "78b9f52c-febf-4a73-89ae-c7a4723e3944"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "4a8264be-df2c-4175-b1f2-776d388e2042",
+      "Name": "PostalAddress",
+      "Code": "PostalAddress",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "PreviousPropertyGuid"
+      ],
+      "PreviousPropertyGuid": "c0fedb36-4bff-4978-a39e-ee43154bc84b"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "fb72b196-fb7f-4ea9-b2ef-7212f205afe5",
+      "Name": "Phones",
+      "Code": "Phones",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "PreviousPropertyGuid"
+      ],
+      "PreviousPropertyGuid": "4a8264be-df2c-4175-b1f2-776d388e2042"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "80e99e7b-8e41-40c1-9112-8f42d8c34ce1",
+      "Name": "Email",
+      "Code": "Email",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "PreviousPropertyGuid"
+      ],
+      "PreviousPropertyGuid": "fb72b196-fb7f-4ea9-b2ef-7212f205afe5"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "63f355a0-920c-4682-91ab-e446175167dd",
+      "Name": "Homepage",
+      "Code": "Homepage",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "PreviousPropertyGuid"
+      ],
+      "PreviousPropertyGuid": "80e99e7b-8e41-40c1-9112-8f42d8c34ce1"
+    },
+    {
+      "$type": "Sungero.Metadata.BooleanPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "f37e4637-5192-4dde-8272-29c8982e1b56",
+      "Name": "Nonresident",
+      "Code": "Nonresident",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "PreviousPropertyGuid"
+      ],
+      "PreviousPropertyGuid": "d54b1c1e-0500-4b30-b55d-88a2f2e4f249"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "a2bd7b0a-7d70-4d84-86af-5eab9be3913d",
+      "Name": "PSRN",
+      "Code": "PSRN",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "PreviousPropertyGuid"
+      ],
+      "PreviousPropertyGuid": "097187c8-c19a-4327-83dc-7f30e5f11e9e"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "a16a0224-d3ae-44bf-842e-0f0afcaeb066",
+      "Name": "NCEO",
+      "Code": "NCEO",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "PreviousPropertyGuid"
+      ],
+      "PreviousPropertyGuid": "a2bd7b0a-7d70-4d84-86af-5eab9be3913d"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "e794d0c1-2b89-41d1-879e-8cac4ba06c4c",
+      "Name": "NCEA",
+      "Code": "NCEA",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "PreviousPropertyGuid"
+      ],
+      "PreviousPropertyGuid": "a16a0224-d3ae-44bf-842e-0f0afcaeb066"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "233a4755-18ec-4ee4-b48f-13b8e129a004",
+      "Name": "Account",
+      "Code": "Account",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "PreviousPropertyGuid"
+      ],
+      "PreviousPropertyGuid": "f37e4637-5192-4dde-8272-29c8982e1b56"
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "93db464a-c19f-441c-bf41-7ad6b9ea2fb5",
+      "Name": "City",
+      "Code": "City",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "PreviousPropertyGuid"
+      ],
+      "PreviousPropertyGuid": "e794d0c1-2b89-41d1-879e-8cac4ba06c4c"
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "8e14d1b1-02b8-466c-aed8-a69a4d95c0fa",
+      "Name": "HeadCompany",
+      "Code": "HeadCompany",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "PreviousPropertyGuid"
+      ],
+      "PreviousPropertyGuid": "66f1894a-f36e-43f2-b1a0-152eb6c1cd62"
+    },
+    {
+      "$type": "Sungero.Metadata.BooleanPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "d54b1c1e-0500-4b30-b55d-88a2f2e4f249",
+      "Name": "IsCardReadOnly",
+      "Code": "IsReadOnly",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "PreviousPropertyGuid"
+      ],
+      "PreviousPropertyGuid": "8e14d1b1-02b8-466c-aed8-a69a4d95c0fa"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "66f1894a-f36e-43f2-b1a0-152eb6c1cd62",
+      "Name": "LegalName",
+      "Code": "LegalName",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "PreviousPropertyGuid"
+      ],
+      "PreviousPropertyGuid": "63f355a0-920c-4682-91ab-e446175167dd"
+    }
+  ],
+  "ResourcesKeys": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "a7433e5c-348f-4343-b5da-51305fd72487",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "796d04af-2c28-430c-b410-cfa7418a812d",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 8
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "a1ec287a-7d59-4b4d-8482-ad86a7aa72dd",
+  "Name": "CounterpartyMatchingAssignmentCounterparties",
+  "AccessRightsMode": "NoRight",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "CounterpartyCM",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "3e52ccff-ab9d-4411-8fed-5dab14da2f71",
+      "Name": "CounterpartyMatchingAssignment",
+      "CanBeSearch": false,
+      "Code": "Assignment",
+      "EntityGuid": "3b96f0c5-2a3c-486d-8b90-235828c56ba2",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "afed4beb-d4fd-4eaa-81c2-dc89176ff03a",
+      "Name": "OrganizationId",
+      "CanBeSearch": false,
+      "Code": "OrganizationId",
+      "IsShowedInList": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "3e52ccff-ab9d-4411-8fed-5dab14da2f71"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "85022b2c-ebc5-4981-ae49-2982db4e09d6",
+      "Name": "Name",
+      "CanBeSearch": false,
+      "Code": "Name",
+      "IsEnabled": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "afed4beb-d4fd-4eaa-81c2-dc89176ff03a"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "ebed8e41-a8a2-4ff5-bf49-556ac8094c4f",
+      "Name": "TIN",
+      "CanBeSearch": false,
+      "Code": "TIN",
+      "IsEnabled": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "85022b2c-ebc5-4981-ae49-2982db4e09d6"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "59814823-1495-4289-a23a-5ddd9fcb74e3",
+      "Name": "TRRC",
+      "CanBeSearch": false,
+      "Code": "TRRC",
+      "IsEnabled": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "ebed8e41-a8a2-4ff5-bf49-556ac8094c4f"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "70994b74-5d39-41d1-b970-8c5181da3bf3",
+      "Name": "PSRN",
+      "CanBeSearch": false,
+      "Code": "PSRN",
+      "IsEnabled": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "59814823-1495-4289-a23a-5ddd9fcb74e3"
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "727db0fe-aa57-483e-b700-3d9ea771120f",
+      "Name": "Counterparty",
+      "CanBeSearch": false,
+      "Code": "Counterparty",
+      "EntityGuid": "294767f1-009f-4fbd-80fc-f98c49ddc560",
+      "FlatListInStandaloneLookup": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "70994b74-5d39-41d1-b970-8c5181da3bf3"
+    }
+  ],
+  "RibbonCardMetadata": {
+    "NameGuid": "f5fec8f8-e576-45e9-9b8e-3d17efef5ca1",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "7567aa5a-3bdf-4f6e-adfe-fba3828bce20",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 8
+    }
+  ]
+}

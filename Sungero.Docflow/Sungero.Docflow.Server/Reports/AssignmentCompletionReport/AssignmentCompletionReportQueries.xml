@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<queries>
+  <query key="SelectAssignmentsFromTempTable">
+    <default><![CDATA[select 
+        AssignmentId,
+        Performer,
+        EmployeeName,
+        JobTitle,
+        Department,
+        Task,
+        Subject,
+        Author,
+        AuthorName,
+        Created,
+        Deadline,
+        Completed,
+        CreatedTime,
+        DeadlineTime,
+        CompletedTime,
+        IsRead,
+        Status,
+        Delay,
+        DelaySort,
+        AssignmentStatus,
+        HyperLink,
+  (select COUNT(1)
+   from Sungero_Reports_AssCompletion as TotalAssView
+   where TotalAssView.Performer = AssView.Performer
+       and TotalAssView.ReportSessionId = @ReportSessionId) as TotalCount,
+  (select COUNT(1)
+   from Sungero_Reports_AssCompletion  as InProcessAssView
+   where InProcessAssView.Performer = AssView. Performer
+     and InProcessAssView.AssignmentStatus = @UndoneAndNotOverdue
+     and InProcessAssView.ReportSessionId = @ReportSessionId) as InProccesCount,
+  (select COUNT(1)
+   from Sungero_Reports_AssCompletion as CompletedAssView
+   where CompletedAssView.Performer = AssView.Performer
+     and CompletedAssView.AssignmentStatus = @DoneAndNotOverdue
+     and CompletedAssView.ReportSessionId = @ReportSessionId) as CompletedCount
+  from Sungero_Reports_AssCompletion  as AssView
+  where  AssView.ReportSessionId = @ReportSessionId;]]></default>
+  </query>
+  <query key="SelectEmployeesFromTempTable">
+    <default><![CDATA[select
+  emp.Id as EmployeeId,
+  pers.ShortName as Name,
+  pos.Name as JobTitle,
+  case 
+    when dep.ShortName_Company_Sungero is not null and dep.ShortName_Company_Sungero <> ''
+    then dep.ShortName_Company_Sungero
+    else dep.Name
+  end as Department,
+  (select COUNT(1)
+   from Sungero_Reports_AssCompletion
+   where Performer = emp.Id
+     and ReportSessionId = @ReportSessionId) as Total,
+  (select COUNT(1)
+   from Sungero_Reports_AssCompletion
+   where Performer = emp.Id
+     and AssignmentStatus = @UndoneAndOverdue
+     and ReportSessionId = @ReportSessionId) as InProccesOverdue,
+  (select COUNT(1)
+   from Sungero_Reports_AssCompletion
+   where Performer = emp.Id
+     and AssignmentStatus = @UndoneAndNotOverdue
+     and ReportSessionId = @ReportSessionId) as InProcces,
+  (select COUNT(1)
+   from Sungero_Reports_AssCompletion
+   where Performer = emp.Id
+     and AssignmentStatus = @DoneAndOverdue
+     and ReportSessionId = @ReportSessionId) as CompletedOverdue,
+  (select COUNT(1)
+   from Sungero_Reports_AssCompletion
+   where Performer = emp.Id
+     and AssignmentStatus = @DoneAndNotOverdue
+     and ReportSessionId = @ReportSessionId) as Completed               
+from 
+  Sungero_Core_Recipient emp
+  left join Sungero_Company_JobTitle pos on
+    emp.JobTitle_Company_Sungero = pos.Id
+  left join Sungero_Core_Recipient department on
+    emp.Department_Company_Sungero = department.Id
+  join Sungero_Parties_Counterparty pers on
+    emp.Person_Company_Sungero = pers.Id  
+  join Sungero_Core_Recipient dep on
+    emp.Department_Company_Sungero = dep.Id  
+where 
+  emp.Discriminator = 'b7905516-2be5-4931-961c-cb38d5677565'
+  and emp.Status = 'Active' 
+  and (@DepartmentId = 0 or emp.Department_Company_Sungero = @DepartmentId)
+  and (@PerformerId = 0 or emp.Id = @PerformerId)
+  and (@BusinessUnitId = 0 or department.BusinessUnit_Company_Sungero = @BusinessUnitId);]]></default>
+  </query>
+  <query key="CreateSourceTable">
+    <mssql><![CDATA[create table {0}
+                                              ([ReportSessionId] varchar(256) NOT NULL,
+                                               [AssignmentId] int NOT NULL,
+                                               [Performer] int NOT NULL,
+                                               [EmployeeName] nvarchar(max) NOT NULL,
+                                               [JobTitle] nvarchar(max) NOT NULL,
+                                               [Department] nvarchar(max) NOT NULL,
+                                               [Task] int NOT NULL,
+                                               [Subject] nvarchar(max) NOT NULL,
+                                               [Author] int NOT NULL,
+                                               [AuthorName] nvarchar(max) NOT NULL,
+                                               [Created] nvarchar(max) NOT NULL,
+                                               [Deadline] nvarchar(max) NULL,
+                                               [Completed] nvarchar(max) NULL,
+                                               [IsRead] nvarchar(max) NOT NULL,
+                                               [Status] nvarchar(max) NOT NULL,
+                                               [CreatedTime] nvarchar(max) NOT NULL,
+                                               [DeadlineTime] nvarchar(max) NOT NULL,
+                                               [CompletedTime] nvarchar(max) NOT NULL,
+                                               [Delay] nvarchar(max) NOT NULL,
+                                               [DelaySort] nvarchar(max) NOT NULL,
+                                               [AssignmentStatus] nvarchar(max) NOT NULL,
+                                               [HyperLink] nvarchar(max) NOT NULL)]]></mssql>
+    <postgres><![CDATA[create table {0}
+                                              (ReportSessionId citext NOT NULL,
+                                               AssignmentId int NOT NULL,
+                                               Performer int NOT NULL,
+                                               EmployeeName citext NOT NULL,
+                                               JobTitle citext NOT NULL,
+                                               Department citext NOT NULL,
+                                               Task int NOT NULL,
+                                               Subject citext NOT NULL,
+                                               Author int NOT NULL,
+                                               AuthorName citext NOT NULL,
+                                               Created timestamp NOT NULL,
+                                               Deadline timestamp NULL,
+                                               Completed timestamp NULL,
+                                               IsRead boolean NOT NULL,
+                                               Status citext NOT NULL,
+                                               CreatedTime citext NOT NULL,
+                                               DeadlineTime citext NOT NULL,
+                                               CompletedTime citext NOT NULL,
+                                               Delay citext NOT NULL,
+                                               DelaySort int NOT NULL,
+                                               AssignmentStatus citext NOT NULL,
+                                               HyperLink citext NOT NULL)]]></postgres>
+  </query>
+</queries>

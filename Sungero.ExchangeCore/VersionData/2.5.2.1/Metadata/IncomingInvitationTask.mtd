@@ -1,0 +1,100 @@
+{
+  "$type": "Sungero.Metadata.TaskMetadata, Sungero.Workflow.Shared",
+  "NameGuid": "1e5b11de-bd28-4dc2-a03c-74b8db9ac1c4",
+  "Name": "IncomingInvitationTask",
+  "AccessRightsMode": "Both",
+  "BaseGuid": "d795d1f6-45c1-4e5e-9677-b53fb7280c7e",
+  "CanBeNavigationPropertyType": true,
+  "CanBeSearch": false,
+  "CreationAreaMetadata": {
+    "NameGuid": "8d829390-c6cf-4b00-b846-412f2d086650",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "bd0a4ce3-3467-48ad-b905-3820bf6b9da6",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true
+  },
+  "IconResourcesKeys": [],
+  "IsAutoCreated": true,
+  "IsVisibleThreadText": true,
+  "NeverLinkToParentWhenCreated": true,
+  "OperationsClass": "",
+  "Overridden": [
+    "CanBeSearch",
+    "IsAutoCreated"
+  ],
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "ef9bb6b5-0c12-49d4-a3c0-8417d1371f1d",
+      "Name": "Box",
+      "CanBeSearch": false,
+      "Code": "Box",
+      "EntityGuid": "2dd7a803-8db7-40e1-9da6-b41c62d367c8",
+      "FlatListInStandaloneLookup": true,
+      "IsRequired": true,
+      "IsShowedInList": false,
+      "IsVisibility": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "e5e944f2-e530-487a-a480-b111c31fa70e"
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "8edf8543-c604-4a50-bcf1-3c8772705504",
+      "Name": "Counterparty",
+      "CanBeSearch": false,
+      "Code": "Counterparty",
+      "EntityGuid": "294767f1-009f-4fbd-80fc-f98c49ddc560",
+      "FlatListInStandaloneLookup": true,
+      "IsRequired": true,
+      "IsShowedInList": false,
+      "IsVisibility": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "ef9bb6b5-0c12-49d4-a3c0-8417d1371f1d"
+    }
+  ],
+  "ResourcesKeys": [
+    "TaskSubject",
+    "TaskActiveText",
+    "AssignmentSubject",
+    "AssignmentComment"
+  ],
+  "RibbonCardMetadata": {
+    "NameGuid": "fcac1a4d-2bef-4f6f-b720-cef0cc41a60f",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "3cafc1b9-a722-4ce9-9cdd-19d229393d48",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "TaskMetadata",
+      "Number": 1
+    },
+    {
+      "Type": "WorkflowEntityMetadata",
+      "Number": 2
+    },
+    {
+      "Type": "EntityMetadata",
+      "Number": 8
+    }
+  ]
+}

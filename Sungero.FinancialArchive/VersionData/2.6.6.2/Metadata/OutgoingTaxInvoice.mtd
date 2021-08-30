@@ -1,0 +1,173 @@
+{
+  "$type": "Sungero.Metadata.DocumentMetadata, Sungero.Metadata",
+  "NameGuid": "f50c4d8a-56bc-43ef-bac3-856f57ca70be",
+  "Name": "OutgoingTaxInvoice",
+  "AccessRightsMode": "Both",
+  "BaseGuid": "96c4f4f3-dc74-497a-b347-e8faf4afe320",
+  "CanBeNavigationPropertyType": true,
+  "CanBeSearch": true,
+  "CreationAreaMetadata": {
+    "NameGuid": "7322020b-3299-4fba-b9b0-4c995bd2e401",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "80d3ce1a-9a72-443a-8b6c-6c6eef0c8d0f",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true
+  },
+  "HandledEvents": [
+    "CreatedServer"
+  ],
+  "IconResourcesKeys": [],
+  "OpenCardByDefaultInCollection": true,
+  "OperationsClass": "",
+  "Overridden": [
+    "CanBeSearch"
+  ],
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.EnumPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "ec082683-e3d8-4cf2-8cfa-1461ee0e6fc0",
+      "Name": "LifeCycleState",
+      "Code": "LifeCycleState",
+      "DirectValues": [],
+      "HandledEvents": [
+        "FilteringClient"
+      ],
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "HandledEvents"
+      ]
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "125589da-53ba-4d6d-8bd5-0ab3cd1d19da",
+      "Name": "Document",
+      "Code": "Document",
+      "HandledEvents": [
+        "LookupServer"
+      ],
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "HandledEvents"
+      ]
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "a8cc5c2a-cf89-4611-a4f4-524975ad6abb",
+      "Name": "OurSignatory",
+      "CanBeSearch": false,
+      "Code": "OurSignatory",
+      "IsAncestorMetadata": true,
+      "IsEnabled": false,
+      "IsShowedInList": false,
+      "IsVisibility": false,
+      "Overridden": [
+        "IsEnabled",
+        "IsShowedInList",
+        "CanBeSearch",
+        "IsVisibility"
+      ]
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "569866fc-cb17-4caf-bdee-6ec2ff5d5309",
+      "Name": "ResponsibleEmployee",
+      "CanBeSearch": false,
+      "Code": "RespEmpl",
+      "IsAncestorMetadata": true,
+      "IsEnabled": false,
+      "IsShowedInList": false,
+      "IsVisibility": false,
+      "Overridden": [
+        "IsEnabled",
+        "IsShowedInList",
+        "CanBeSearch",
+        "IsVisibility"
+      ]
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "16ad65c0-cf92-4162-8e3e-242501eef95e",
+      "Name": "Contact",
+      "Code": "Contact",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "CanBeSearch",
+        "IsEnabled",
+        "IsShowedInList",
+        "IsVisibility"
+      ]
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "4bc39efb-1f46-4a1e-8b8c-04f2b90d6a8b",
+      "Name": "Subject",
+      "CanBeSearch": false,
+      "Code": "Subject",
+      "IsAncestorMetadata": true,
+      "IsEnabled": false,
+      "IsShowedInList": false,
+      "IsVisibility": false,
+      "Overridden": [
+        "IsEnabled",
+        "IsShowedInList",
+        "CanBeSearch",
+        "IsVisibility",
+        "IsQuickSearchAllowed"
+      ]
+    },
+    {
+      "$type": "Sungero.Metadata.EnumPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "1b62fa20-6091-4c3b-bc88-ce347e1ba1f9",
+      "Name": "Operation",
+      "Code": "Operation",
+      "DirectValues": [],
+      "HandledEvents": [
+        "FilteringClient"
+      ],
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "HandledEvents",
+        "IsRequired"
+      ]
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [
+    "NamePartForContractor"
+  ],
+  "RibbonCardMetadata": {
+    "NameGuid": "35c7e1b7-b848-48c5-a76a-4122f77d233e",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "3f4b66d4-b431-41fc-bcb0-117e830cdec4",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "DocumentMetadata",
+      "Number": 1
+    },
+    {
+      "Type": "EntityMetadata",
+      "Number": 8
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "f9d15b1c-2784-4c84-8348-1e162d70b988",
+  "Name": "Contracts",
+  "ClientAssemblyName": "Sungero.Contracts.Client",
+  "ClientBaseAssemblyName": "Sungero.Contracts.ClientBase",
+  "ClientBaseNamespace": "Sungero.Contracts.ClientBase",
+  "ClientNamespace": "Sungero.Contracts.Client",
+  "Code": "Contrac",
+  "CompanyCode": "Sungero",
+  "Cover": {
+    "NameGuid": "e760d7e0-cecb-4289-8e26-9071ecbdae96",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "b570009b-3be8-4eec-a6e0-e5954a983920",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "7e22ac77-1135-4c32-b70c-c4715cfe0429",
+      "BackgroundPosition": "Stretch"
+    }
+  },
+  "Dependencies": [
+    {
+      "Id": "df83a2ea-8d43-4ec4-a34a-2e61863014df",
+      "MaxVersion": "",
+      "MinVersion": "2.5.18.0"
+    },
+    {
+      "Id": "243b34ec-8425-4c7e-b66f-27f7b9c8f38d",
+      "MaxVersion": "",
+      "MinVersion": "2.5.18.0"
+    },
+    {
+      "Id": "e4fe1153-919e-4732-aadc-2c8e9b5c0b5a",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": "0.0.1.0"
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "59079f7f-a326-4947-bbd6-0ae6dfb5f59b"
+    },
+    {
+      "ItemId": "f37c7e63-b134-4446-9b5b-f8811f6c9666",
+      "PreviousItemId": "59079f7f-a326-4947-bbd6-0ae6dfb5f59b"
+    },
+    {
+      "ItemId": "265f2c57-6a8a-4a15-833b-ca00e8047fa5",
+      "PreviousItemId": "f37c7e63-b134-4446-9b5b-f8811f6c9666"
+    },
+    {
+      "ItemId": "dcbf9c6f-9bb6-4b61-b501-db35df320207",
+      "PreviousItemId": "265f2c57-6a8a-4a15-833b-ca00e8047fa5"
+    },
+    {
+      "ItemId": "eb34ad64-f23b-4c9f-9d48-74834fbbe33e",
+      "PreviousItemId": "dcbf9c6f-9bb6-4b61-b501-db35df320207"
+    },
+    {
+      "ItemId": "a523a263-bc00-40f9-810d-f582bae2205d",
+      "PreviousItemId": "eb34ad64-f23b-4c9f-9d48-74834fbbe33e"
+    },
+    {
+      "ItemId": "0523387b-a689-41e5-bed3-95892df6922c",
+      "PreviousItemId": "a523a263-bc00-40f9-810d-f582bae2205d"
+    },
+    {
+      "ItemId": "306da7fa-dc27-437c-bb83-42c92436b7e2",
+      "PreviousItemId": "0523387b-a689-41e5-bed3-95892df6922c"
+    },
+    {
+      "ItemId": "99b2ba4b-8861-42cb-8bf6-3040e9995c11",
+      "PreviousItemId": "306da7fa-dc27-437c-bb83-42c92436b7e2"
+    },
+    {
+      "ItemId": "03a2d2f4-a15a-4b5b-a97b-71140a938cbe",
+      "PreviousItemId": "99b2ba4b-8861-42cb-8bf6-3040e9995c11"
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "High",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "Sungero.Contracts",
+  "IsVisible": false,
+  "Jobs": [
+    {
+      "NameGuid": "86eb396d-180f-428b-aa35-241ca1a1d4ee",
+      "Name": "SendNotificationForExpiringContracts",
+      "GenerateHandler": true,
+      "MonthSchedule": "Monthly",
+      "Schedule": "* * * * *",
+      "StartAt": "1753-01-01T06:00:00"
+    }
+  ],
+  "NeedResetAppliedCache": true,
+  "Overridden": [
+    "IsLicensed",
+    "NeedResetAppliedCache",
+    "NeedResetCache",
+    "IsVisible"
+  ],
+  "PublicConstants": [
+    {
+      "NameGuid": "b74073a0-2da3-49cf-80a5-0abccf3108a4",
+      "Name": "AccountingDocumentsRelationName",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"FinancialDocuments\""
+    }
+  ],
+  "PublicFunctions": [
+    {
+      "NameGuid": "b1649770-cbed-43e8-8fd5-4243e134bb68",
+      "Name": "CreateDefaultInvoiceRule",
+      "Parameters": [
+        {
+          "NameGuid": "9eed5764-30e5-4046-a87b-7a67dab03826",
+          "Name": "ruleName",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "NameGuid": "5ae74524-d08a-424f-87a6-a67443ddf1af",
+          "Name": "stages",
+          "ParameterType": "global::System.Collections.Generic.List<global::Sungero.Core.Enumeration>",
+          "ParameterTypeFullName": "System.Collections.Generic.List"
+        }
+      ],
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "NameGuid": "d106da8b-c168-4395-bcb1-9751c491fa3a",
+      "Name": "CreateDefaultRule",
+      "Parameters": [
+        {
+          "NameGuid": "d0d87f07-0af2-4715-95d7-9a9685bc06fd",
+          "Name": "ruleName",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "NameGuid": "74fbf4c2-7bd7-4aad-a458-c7f29387e426",
+          "Name": "documentFlow",
+          "ParameterType": "global::Sungero.Core.Enumeration",
+          "ParameterTypeFullName": "Sungero.Core.Enumeration, Sungero.Domain.Shared"
+        },
+        {
+          "NameGuid": "5eda384a-e1a4-42c9-8bda-de1e1f082855",
+          "Name": "stages",
+          "ParameterType": "global::System.Collections.Generic.List<global::Sungero.Core.Enumeration>",
+          "ParameterTypeFullName": "System.Collections.Generic.List"
+        }
+      ],
+      "ReturnType": "global::Sungero.Contracts.IContractsApprovalRule",
+      "ReturnTypeFullName": "Sungero.Contracts.IContractsApprovalRule, Sungero.Domain.Interfaces"
+    },
+    {
+      "NameGuid": "69c61a26-cd76-4e6d-9d5f-4e6696fd358e",
+      "Name": "GetContractualDocsWithCounterparty",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "NameGuid": "2d38b40b-3879-4d7f-a8d4-10788acba559",
+          "Name": "counterparty",
+          "ParameterType": "global::Sungero.Parties.ICounterparty",
+          "ParameterTypeFullName": "Sungero.Parties.ICounterparty, Sungero.Domain.Interfaces"
+        },
+        {
+          "NameGuid": "417322ee-46c6-47dc-8caf-3df8ffed7879",
+          "Name": "dateFrom",
+          "ParameterType": "global::System.Nullable<global::System.DateTime>",
+          "ParameterTypeFullName": "System.Nullable"
+        },
+        {
+          "NameGuid": "ca574693-0177-4df8-b840-fc6bd5388164",
+          "Name": "dateTo",
+          "ParameterType": "global::System.Nullable<global::System.DateTime>",
+          "ParameterTypeFullName": "System.Nullable"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.Linq.IQueryable<global::Sungero.Contracts.IContractualDocument>",
+      "ReturnTypeFullName": "System.Linq.IQueryable"
+    },
+    {
+      "NameGuid": "b1962dc1-13d3-4533-8572-d69b4b955cba",
+      "Name": "GetContractualDocumentRegisters",
+      "IsRemote": true,
+      "Placement": "Shared",
+      "ReturnType": "global::System.Collections.Generic.List<global::Sungero.Docflow.IDocumentRegister>",
+      "ReturnTypeFullName": "System.Collections.Generic.List"
+    },
+    {
+      "NameGuid": "d1672a59-88c7-4b13-8d38-c8c275137321",
+      "Name": "GetFilteredRegisteredDocuments",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "NameGuid": "eaeb0cae-8a33-4664-83a8-2059c886c83d",
+          "Name": "number",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "NameGuid": "572b266f-4d63-407e-b4b3-a6d00f35f098",
+          "Name": "dateFrom",
+          "ParameterType": "global::System.Nullable<global::System.DateTime>",
+          "ParameterTypeFullName": "System.Nullable"
+        },
+        {
+          "NameGuid": "99107605-ab59-4177-8bf4-c01d2007da47",
+          "Name": "dateTo",
+          "ParameterType": "global::System.Nullable<global::System.DateTime>",
+          "ParameterTypeFullName": "System.Nullable"
+        },
+        {
+          "NameGuid": "3a17297d-c22b-451a-9c95-81c276a9a09e",
+          "Name": "documentRegister",
+          "ParameterType": "global::Sungero.Docflow.IDocumentRegister",
+          "ParameterTypeFullName": "Sungero.Docflow.IDocumentRegister, Sungero.Domain.Interfaces"
+        },
+        {
+          "NameGuid": "b97e7d09-e9a1-47bd-9b82-98dd4c513113",
+          "Name": "caseFile",
+          "ParameterType": "global::Sungero.Docflow.ICaseFile",
+          "ParameterTypeFullName": "Sungero.Docflow.ICaseFile, Sungero.Domain.Interfaces"
+        },
+        {
+          "NameGuid": "f9ec0a0a-4594-4e46-b574-a21e0ac778bb",
+          "Name": "responsibleEmployee",
+          "ParameterType": "global::Sungero.Company.IEmployee",
+          "ParameterTypeFullName": "Sungero.Company.IEmployee, Sungero.Domain.Interfaces"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.Linq.IQueryable<global::Sungero.Contracts.IContractualDocument>",
+      "ReturnTypeFullName": "System.Linq.IQueryable"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "Sungero.Contracts",
+  "ResourcesKeys": [
+    "AutoRenewableContractExpires",
+    "ContractKindName",
+    "ContractKindShortName",
+    "ContractTypeName",
+    "DefaultApprovalRuleNameContracts",
+    "DefaultApprovalRuleNameInvoice",
+    "DescriptionContractsRegistrarRole",
+    "DescriptionResponsibleForContractsRole",
+    "ExpiringContractsRenewalText",
+    "ExpiringContractsSubject",
+    "ExpiringContractsText",
+    "GiveInAccountant",
+    "GiveInvoiceApprovalStageName",
+    "IncomingInvoiceKindName",
+    "IncomingInvoiceKindShortName",
+    "IncomingInvoiceTypeName",
+    "RegistersAndSettingsSupAgreementIndex",
+    "RegistersAndSettingsSupAgreementName",
+    "RelationAccountingDescription",
+    "RelationAccountingSourceTitle",
+    "RelationAccountingTargetTitle",
+    "RelationSupAgreementDescription",
+    "RelationSupAgreementSourceTitle",
+    "RelationSupAgreementTargetTitle",
+    "RoleDescriptionContractResponsible",
+    "RoleDescriptionContractResponsibleManager",
+    "SupAgreementKindName",
+    "SupAgreementKindShortName",
+    "SupAgreementTypeName"
+  ],
+  "ServerAssemblyName": "Sungero.Contracts.Server",
+  "ServerNamespace": "Sungero.Contracts.Server",
+  "SharedAssemblyName": "Sungero.Contracts.Shared",
+  "SharedNamespace": "Sungero.Contracts.Shared",
+  "SpecialFolders": [],
+  "Version": "2.6.22.1",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 5
+    }
+  ]
+}

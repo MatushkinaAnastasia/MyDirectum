@@ -1,0 +1,1 @@
+﻿ALTER INDEX IF EXISTS public.idx_Assignment_Status_Discriminator_Performer RENAME TO idx_Asg_Status_Discriminator_Performer;

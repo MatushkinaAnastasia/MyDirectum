@@ -1,0 +1,72 @@
+{
+  "$type": "Sungero.Metadata.DocumentMetadata, Sungero.Metadata",
+  "NameGuid": "4e81f9ca-b95a-4fd4-bf76-ea7176c215a7",
+  "Name": "Waybill",
+  "AccessRightsMode": "Both",
+  "Actions": [
+    {
+      "NameGuid": "228f2bab-7091-4731-a6e2-3742eeaf9ff5",
+      "Name": "Sign",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "GenerateHandler"
+      ]
+    }
+  ],
+  "BaseGuid": "96c4f4f3-dc74-497a-b347-e8faf4afe320",
+  "CanBeNavigationPropertyType": true,
+  "CanBeSearch": true,
+  "CreationAreaMetadata": {
+    "NameGuid": "7322020b-3299-4fba-b9b0-4c995bd2e401",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "80d3ce1a-9a72-443a-8b6c-6c6eef0c8d0f",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true
+  },
+  "HandledEvents": [
+    "ShowingSignDialogClient"
+  ],
+  "IconResourcesKeys": [],
+  "OpenCardByDefaultInCollection": true,
+  "OperationsClass": "",
+  "Overridden": [
+    "CanBeSearch"
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "c8db92fc-31e0-4326-b67f-c1ee57a82bd7",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "f31a8b02-f6c8-42f8-9147-4afd7fca868a",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "DocumentMetadata",
+      "Number": 1
+    },
+    {
+      "Type": "EntityMetadata",
+      "Number": 8
+    }
+  ]
+}

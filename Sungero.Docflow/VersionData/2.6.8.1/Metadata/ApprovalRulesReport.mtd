@@ -1,0 +1,98 @@
+{
+  "$type": "Sungero.Metadata.ReportMetadata, Sungero.Reporting.Shared",
+  "NameGuid": "8e960e5a-e7da-47ca-a8e0-01004e8d3986",
+  "Name": "ApprovalRulesReport",
+  "AssociatedGuid": "df83a2ea-8d43-4ec4-a34a-2e61863014df",
+  "BaseGuid": "cef9a810-3f30-4eca-9fe3-30992af0b818",
+  "DataSources": [
+    {
+      "NameGuid": "eb919dbf-f018-4d5c-b480-c54404a9fe0c",
+      "Name": "BusinessUnits",
+      "EntityType": "eff95720-181f-4f7d-892d-dec034c7b2ab"
+    }
+  ],
+  "DefaultExportFormat": "Pdf",
+  "ExportFormats": [
+    "Pdf",
+    "Word"
+  ],
+  "HandledEvents": [
+    "BeforeExecuteClient",
+    "BeforeExecuteServer",
+    "AfterExecuteServer"
+  ],
+  "IconResourcesKeys": [],
+  "Overridden": [
+    "IsReadOnly",
+    "Parameters",
+    "DataSources",
+    "DisplayName"
+  ],
+  "Parameters": [
+    {
+      "NameGuid": "13c31603-8e0a-482d-81c9-11f07864a8d0",
+      "Name": "BusinessUnit",
+      "EntityType": "eff95720-181f-4f7d-892d-dec034c7b2ab",
+      "InternalDataTypeName": "Sungero.Company.IBusinessUnit, Sungero.Domain.Interfaces"
+    },
+    {
+      "NameGuid": "ddf048f9-119b-4520-b4a4-cab6145ab9ff",
+      "Name": "ParamsDescriprion",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "a1325376-0444-4956-a96c-07bfdd92ecff",
+      "Name": "SourceDataTableName",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "9d9866e9-2db3-4631-befe-b9349cdc4ea7",
+      "Name": "DocumentFlow",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "5edf483b-59b1-4776-abda-f1e1901310fb",
+      "Name": "FilterDepartmentsForBusinessUnits",
+      "InternalDataTypeName": "System.Boolean",
+      "IsSimpleDataType": true
+    },
+    {
+      "NameGuid": "c98dd320-33a7-4ad3-a7f5-6f46bbd64f71",
+      "Name": "DocumentFlowLabel",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "54949cb8-4db9-417f-9e86-7ff5302263c1",
+      "Name": "CurrentDate",
+      "InternalDataTypeName": "System.DateTime",
+      "IsSimpleDataType": true
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [
+    "InternalDocuments",
+    "IncomingDocuments",
+    "OutgoingDocuments",
+    "ContractualDocuments",
+    "BusinessUnitParamsDescriprion",
+    "DocumentFlowParamsDescriprion",
+    "FilteringParamsDescription",
+    "YesButton",
+    "NoButton",
+    "AllDepartmentString",
+    "ContractualDocumentRule",
+    "RuleNotFound",
+    "AllCategories",
+    "ApprovalRulesOfDocuments",
+    "Rule",
+    "Departments",
+    "ContractlCategories",
+    "Conditions",
+    "Approvers",
+    "Signatories",
+    "DraftMark",
+    "ActiveRuleNotFoundButFoundDraft",
+    "FilterDepartmentsForBusinessUnitsDialogCheckBox"
+  ],
+  "Versions": []
+}

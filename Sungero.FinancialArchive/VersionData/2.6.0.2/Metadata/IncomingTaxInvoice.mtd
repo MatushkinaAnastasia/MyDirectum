@@ -1,0 +1,54 @@
+{
+  "$type": "Sungero.Metadata.DocumentMetadata, Sungero.Metadata",
+  "NameGuid": "74c9ddd4-4bc4-42b6-8bb0-c91d5e21fb8a",
+  "Name": "IncomingTaxInvoice",
+  "AccessRightsMode": "Both",
+  "BaseGuid": "96c4f4f3-dc74-497a-b347-e8faf4afe320",
+  "CanBeNavigationPropertyType": true,
+  "CreationAreaMetadata": {
+    "NameGuid": "7322020b-3299-4fba-b9b0-4c995bd2e401",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "80d3ce1a-9a72-443a-8b6c-6c6eef0c8d0f",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true
+  },
+  "IconResourcesKeys": [],
+  "OpenCardByDefaultInCollection": true,
+  "OperationsClass": "",
+  "ResourcesKeys": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "eb59319f-bf92-445b-afe0-e8d5f5ca5635",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "23d18ac4-d6bd-4ece-872a-ff0868cbbae3",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "DocumentMetadata",
+      "Number": 1
+    },
+    {
+      "Type": "EntityMetadata",
+      "Number": 8
+    }
+  ]
+}

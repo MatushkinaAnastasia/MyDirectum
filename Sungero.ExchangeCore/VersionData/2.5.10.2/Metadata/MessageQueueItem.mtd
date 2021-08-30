@@ -1,0 +1,73 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "f9a3ec37-0fd4-4343-a295-9394ba830a0e",
+  "Name": "MessageQueueItem",
+  "BaseGuid": "4e09273f-8b3a-489e-814e-a4ebfbba3e6c",
+  "CanBeNavigationPropertyType": true,
+  "CanBeSearch": true,
+  "CreationAreaMetadata": {
+    "NameGuid": "f7766750-eee2-4fcd-8003-5c06a90d1f44",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "b0125fbd-3b91-4dbb-914a-689276216404",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true
+  },
+  "IconResourcesKeys": [],
+  "IsAutoCreated": true,
+  "OperationsClass": "",
+  "Overridden": [
+    "IsAutoCreated",
+    "CanBeSearch"
+  ],
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.EnumPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "8c23dbed-5e18-4155-ae12-f4d10095e30b",
+      "Name": "ProcessingStatus",
+      "Code": "ProcessStatus",
+      "DirectValues": [
+        {
+          "NameGuid": "c3a01dc1-85e4-46ef-a1d4-bc946c9cb6ee",
+          "Name": "Processed",
+          "Code": "Processed"
+        }
+      ],
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "Values"
+      ]
+    }
+  ],
+  "ResourcesKeys": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "4cfe59dc-38a8-4c60-931c-b8f2c70288d3",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "901c4b3b-9ea0-4da7-b16a-386ca04d1c1b",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 8
+    }
+  ]
+}

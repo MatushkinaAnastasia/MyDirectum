@@ -1,0 +1,119 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "bc0d1897-640a-4b4d-a43a-a23c5984a009",
+  "Name": "ExchangeCore",
+  "ClientAssemblyName": "Sungero.ExchangeCore.Client",
+  "ClientBaseAssemblyName": "Sungero.ExchangeCore.ClientBase",
+  "ClientBaseNamespace": "Sungero.ExchangeCore.ClientBase",
+  "ClientNamespace": "Sungero.ExchangeCore.Client",
+  "Code": "ExCore",
+  "CompanyCode": "Sungero",
+  "Cover": {
+    "NameGuid": "095b2994-1739-4217-959f-488ebbd9233e",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "b2b74f2e-5fc6-4583-92d7-0bcd3e7e0f92",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "702a14d5-72e4-469d-ad26-a301d81a844f",
+      "BackgroundPosition": "Stretch"
+    }
+  },
+  "Dependencies": [
+    {
+      "Id": "e4fe1153-919e-4732-aadc-2c8e9b5c0b5a",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    },
+    {
+      "Id": "d534e107-a54d-48ec-85ff-bc44d731a82f",
+      "MaxVersion": "",
+      "MinVersion": "2.5.10.0"
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "f91dcce6-a914-4c04-aba1-0f940475696b"
+    },
+    {
+      "ItemId": "d6c0fcaf-4ac9-4a6a-9e2c-8fed1e35c08a",
+      "PreviousItemId": "f91dcce6-a914-4c04-aba1-0f940475696b"
+    },
+    {
+      "ItemId": "2dd7a803-8db7-40e1-9da6-b41c62d367c8",
+      "PreviousItemId": "d6c0fcaf-4ac9-4a6a-9e2c-8fed1e35c08a"
+    },
+    {
+      "ItemId": "1e5b11de-bd28-4dc2-a03c-74b8db9ac1c4",
+      "PreviousItemId": "2dd7a803-8db7-40e1-9da6-b41c62d367c8"
+    },
+    {
+      "ItemId": "cf5edde0-03df-4db3-9e1e-15b22cf3198c",
+      "PreviousItemId": "1e5b11de-bd28-4dc2-a03c-74b8db9ac1c4"
+    },
+    {
+      "ItemId": "4e09273f-8b3a-489e-814e-a4ebfbba3e6c",
+      "PreviousItemId": "cf5edde0-03df-4db3-9e1e-15b22cf3198c"
+    },
+    {
+      "ItemId": "50a0d7aa-1f04-4e4a-8f0c-044e0ba99949",
+      "PreviousItemId": "4e09273f-8b3a-489e-814e-a4ebfbba3e6c"
+    },
+    {
+      "ItemId": "f9a3ec37-0fd4-4343-a295-9394ba830a0e",
+      "PreviousItemId": "50a0d7aa-1f04-4e4a-8f0c-044e0ba99949"
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Low",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "Sungero.ExchangeCore",
+  "IsVisible": false,
+  "Libraries": [
+    {
+      "NameGuid": "2a956cec-bacb-40c2-951e-a870245ab447",
+      "Name": "DCX",
+      "Scope": "Server"
+    }
+  ],
+  "Overridden": [
+    "Importance",
+    "IsVisible",
+    "NeedResetAppliedCache",
+    "NeedResetCache"
+  ],
+  "PublicFunctions": [
+    {
+      "NameGuid": "5d7c13c5-85ad-4f29-8098-ca995ec36640",
+      "Name": "GetBusinessBoxResponsibleRole",
+      "IsRemote": true,
+      "Placement": "Shared",
+      "ReturnType": "global::Sungero.CoreEntities.IRole",
+      "ReturnTypeFullName": "Sungero.CoreEntities.IRole, Sungero.Domain.Shared"
+    }
+  ],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "Sungero.ExchangeCore",
+  "ResourcesKeys": [
+    "WrongWebsite",
+    "BusinessUnitBoxResponsibleRoleName",
+    "BusinessUnitBoxResponsibleRoleDescription"
+  ],
+  "ServerAssemblyName": "Sungero.ExchangeCore.Server",
+  "ServerNamespace": "Sungero.ExchangeCore.Server",
+  "SharedAssemblyName": "Sungero.ExchangeCore.Shared",
+  "SharedNamespace": "Sungero.ExchangeCore.Shared",
+  "SpecialFolders": [],
+  "Version": "2.5.10.2",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 4
+    }
+  ]
+}

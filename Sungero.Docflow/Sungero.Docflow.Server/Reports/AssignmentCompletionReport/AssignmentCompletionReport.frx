@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReferencedAssemblies="System.dll&#13;&#10;System.Core.dll&#13;&#10;System.Drawing.dll&#13;&#10;System.Windows.Forms.dll&#13;&#10;System.Data.dll&#13;&#10;System.Xml.dll&#13;&#10;Sungero.Domain.Shared&#13;&#10;Sungero.CoreEntities.Shared&#13;&#10;Sungero.Reporting.Shared&#13;&#10;CommonLibrary&#13;&#10;Sungero.CoreEntities.Server&#13;&#10;Sungero.Domain&#13;&#10;Sungero.Company.Shared&#13;&#10;Sungero.Company.Server&#13;&#10;Sungero.Domain.Interfaces&#13;&#10;Sungero.Docflow.Shared&#13;&#10;Sungero.Docflow.Server" StartReportEvent="_StartReport" ReportInfo.CreatorVersion="2020.2.12.0">
+  <ScriptText>using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text.RegularExpressions;
+using System.Windows.Forms;
+using FastReport;
+using FastReport.Data;
+using FastReport.Dialog;
+using FastReport.Barcode;
+using FastReport.Table;
+using FastReport.Utils;
+using Sungero.Company;
+using Sungero.CoreEntities;
+using Sungero.Domain.Shared;
+using Sungero.Core;
+using Resources = Sungero.Docflow.Reports.Resources;
+
+
+namespace FastReport
+{
+  public class ReportScript
+  {  
+    private void _StartReport(object sender, EventArgs e)
+    {
+      if ((ReportExportFormat)Report.GetParameterValue(&quot;ExportFormat&quot;) == ReportExportFormat.Excel)
+      {
+        Page1.UnlimitedHeight = true;
+      }
+    }
+  }
+}
+  </ScriptText>
+  <Dictionary>
+    <SungeroSqlDataConnection Name="Sungero_Connection" Restrictions="DontModify, DontEdit, DontDelete, HideAllProperties" ConnectionStringExpression="[SungeroConnectionString]">
+      <TableDataSource Name="Table" Alias="Assignments" DataType="System.Int32" Enabled="true" CanEdit="true" SelectCommand="${SelectAssignmentsFromTempTable}">
+        <Column Name="assignmentId" Alias="AssignmentId" DataType="System.Int32" PropName="Column"/>
+        <Column Name="Performer" DataType="System.Int32" PropName="Column"/>
+        <Column Name="Task" DataType="System.Int32" PropName="Column"/>
+        <Column Name="Subject" DataType="System.String" PropName="Column"/>
+        <Column Name="AuthorName" DataType="System.String" PropName="Column"/>
+        <Column Name="Created" DataType="System.DateTime" PropName="Column"/>
+        <Column Name="Deadline" DataType="System.DateTime" PropName="Column"/>
+        <Column Name="Completed" DataType="System.DateTime" PropName="Column"/>
+        <Column Name="IsRead" DataType="System.Boolean" PropName="Column"/>
+        <Column Name="Status" DataType="System.String" PropName="Column"/>
+        <Column Name="Delay" DataType="System.String" PropName="Column"/>
+        <Column Name="HyperLink" DataType="System.String" PropName="Column"/>
+        <Column Name="DelaySort" DataType="System.Int32" PropName="Column"/>
+        <Column Name="assignmentStatus" DataType="System.String" PropName="Column"/>
+        <Column Name="EmployeeName" DataType="System.String" PropName="Column"/>
+        <Column Name="JobTitle" DataType="System.String" PropName="Column"/>
+        <Column Name="Department" DataType="System.String" PropName="Column"/>
+        <Column Name="TotalCount" DataType="System.Int32" PropName="Column"/>
+        <Column Name="CompletedCount" DataType="System.Int32" PropName="Column"/>
+        <Column Name="InProccesCount" DataType="System.Int32" PropName="Column"/>
+        <Column Name="DeadlineTime" DataType="System.String" PropName="Column"/>
+        <Column Name="CompletedTime" DataType="System.String" PropName="Column"/>
+        <Column Name="CreatedTime" DataType="System.String" PropName="Column"/>
+        <CommandParameter Name="AssignmentViewTableName" DataType="16" IsDbType="true" Expression="[AssignmentViewTableName]"/>
+        <CommandParameter Name="DoneAndNotOverdue" DataType="16" IsDbType="true" Expression="[DoneAndNotOverdue]"/>
+        <CommandParameter Name="DoneAndOverdue" DataType="16" IsDbType="true" Expression="[DoneAndOverdue]"/>
+        <CommandParameter Name="UndoneAndNotOverdue" DataType="16" IsDbType="true" Expression="[UndoneAndNotOverdue]"/>
+        <CommandParameter Name="UndoneAndOverdue" DataType="16" IsDbType="true" Expression="[UndoneAndOverdue]"/>
+        <CommandParameter Name="ReportSessionId" DataType="16" IsDbType="true" Size="500" Expression="[ReportSessionId]"/>
+      </TableDataSource>
+      <TableDataSource Name="Table1" Alias="Employees" DataType="System.Int32" Enabled="true" CanEdit="true" SelectCommand="${SelectEmployeesFromTempTable}">
+        <Column Name="EmployeeId" DataType="System.Int32" PropName="Column"/>
+        <Column Name="Name" DataType="System.String" PropName="Column"/>
+        <Column Name="JobTitle" DataType="System.String" PropName="Column"/>
+        <Column Name="Department" DataType="System.String" PropName="Column"/>
+        <Column Name="Total" DataType="System.Int32" PropName="Column"/>
+        <Column Name="InProccesOverdue" DataType="System.Int32" PropName="Column1"/>
+        <Column Name="InProcces" DataType="System.Int32" PropName="Column2"/>
+        <Column Name="CompletedOverdue" DataType="System.Int32" PropName="Column3"/>
+        <Column Name="Completed" DataType="System.Int32" PropName="Column4"/>
+        <CommandParameter Name="AssignmentViewTableName" DataType="16" IsDbType="true" Expression="[AssignmentViewTableName]"/>
+        <CommandParameter Name="DepartmentId" DataType="12" IsDbType="true" Expression="[DepartmentId]"/>
+        <CommandParameter Name="PerformerId" DataType="12" IsDbType="true" Expression="[PerformerId]"/>
+        <CommandParameter Name="BusinessUnitId" DataType="12" IsDbType="true" Expression="[BusinessUnitId]"/>
+        <CommandParameter Name="DoneAndNotOverdue" DataType="16" IsDbType="true" Expression="[DoneAndNotOverdue]"/>
+        <CommandParameter Name="DoneAndOverdue" DataType="16" IsDbType="true" Expression="[DoneAndOverdue]"/>
+        <CommandParameter Name="UndoneAndNotOverdue" DataType="16" IsDbType="true" Expression="[UndoneAndNotOverdue]"/>
+        <CommandParameter Name="UndoneAndOverdue" DataType="16" IsDbType="true" Expression="[UndoneAndOverdue]"/>
+        <CommandParameter Name="ReportSessionId" DataType="16" IsDbType="true" Size="500" Expression="[ReportSessionId]"/>
+      </TableDataSource>
+    </SungeroSqlDataConnection>
+    <SungeroParameter Name="SungeroConnectionString" Restrictions="DontModify, DontEdit, DontDelete, HideAllProperties, DontShow" Id="0a5a8038-cd7c-4a08-b308-6c329c4baca4" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="PeriodBegin" Id="542acc51-0379-47a8-9de4-3638995d61d9" IsRequired="false" IsCollection="false" InternalDataType="System.DateTime" IsSimpleDataType="true" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="PeriodEnd" Id="1527edcf-346e-4830-8a28-bb481077eb86" IsRequired="false" IsCollection="false" InternalDataType="System.DateTime" IsSimpleDataType="true" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="Department" Id="2b9b07de-af9b-4017-b8cf-8b6c5ccf2c0c" IsRequired="false" IsCollection="false" InternalDataType="Sungero.Company.IDepartment, Sungero.Domain.Interfaces" IsSimpleDataType="false" EntityTypeId="61b1c19f-26e2-49a5-b3d3-0d3618151e12"/>
+    <SungeroParameter Name="AssignmentViewTableName" Id="a584c1ef-334f-40ef-8da8-68006bf5e56e" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="DepartmentId" Id="85760dd4-3bac-4a32-9f15-02320a8a51c4" IsRequired="false" IsCollection="false" InternalDataType="System.Int32" IsSimpleDataType="true" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="ClientPeriodEnd" Id="5c1a38aa-0139-4eda-8f96-48db2e5b4f9e" IsRequired="false" IsCollection="false" InternalDataType="System.DateTime" IsSimpleDataType="true" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="ReportDate" Id="bd4748b5-7115-42b9-b4b8-3bd907f26ca1" IsRequired="false" IsCollection="false" InternalDataType="System.DateTime" IsSimpleDataType="true" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="LoadOldAssignments" Id="31a78519-cd05-4bed-8bf7-170e9f515543" IsRequired="false" IsCollection="false" InternalDataType="System.Boolean" IsSimpleDataType="true" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="Performer" Id="aa8e45a9-1c9e-4d87-ac3c-0f17d4132ee3" IsRequired="false" IsCollection="false" InternalDataType="Sungero.CoreEntities.IUser, Sungero.Domain.Shared" IsSimpleDataType="false" EntityTypeId="243c2d26-f5f7-495f-9faf-951d91215c77"/>
+    <SungeroParameter Name="PerformerId" Id="59c06d13-36e0-4ec2-8b13-0e50c192d587" IsRequired="false" IsCollection="false" InternalDataType="System.Int32" IsSimpleDataType="true" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="TaskTypeGuid2" Id="8d2f2c57-92bc-4e36-b213-e479f83234ed" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="IncludeTask" Id="445737fa-e272-4412-803b-d8aa08bb77d0" IsRequired="false" IsCollection="false" InternalDataType="System.Boolean" IsSimpleDataType="true" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="BusinessUnit" Id="84248e50-94f0-4bc8-8812-ee14671358c7" IsRequired="false" IsCollection="false" InternalDataType="Sungero.Company.IBusinessUnit, Sungero.Domain.Interfaces" IsSimpleDataType="false" EntityTypeId="eff95720-181f-4f7d-892d-dec034c7b2ab"/>
+    <SungeroParameter Name="BusinessUnitId" Id="efc69c52-054c-45c0-a290-6df46f15e2df" IsRequired="false" IsCollection="false" InternalDataType="System.Int32" IsSimpleDataType="true" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="ParamsDescription" Id="eecbf4af-8f12-44d2-93b0-2b4b066a9a45" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="DoneAndNotOverdue" Id="1b4da781-70db-4f69-9ae1-e020553f9c45" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="DoneAndOverdue" Id="6f9b0e57-ea80-4e3b-8ac8-728c48d2dbd3" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="UndoneAndNotOverdue" Id="bf46d14e-6199-4eff-91bd-fa0b3174d2f9" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="UndoneAndOverdue" Id="263b93e2-b69d-4f5a-a02d-401499c55ecb" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="ReportSessionId" Id="d87c1862-1c37-413f-80c0-281af3e03def" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="Empty" Id="ce999952-4d6a-4145-9c2b-9ab4ef2973ed" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+  </Dictionary>
+  <ReportPage Name="Page1" Landscape="true" PaperWidth="297" PaperHeight="210" FirstPageSource="15" OtherPagesSource="15" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="1047.06" Height="132.3" CanGrow="true">
+      <TextObject Name="Text13" Width="1048.95" Height="18.9" Text="[Empty][ReportDate]" HorzAlign="Right" Font="Arial, 9pt">
+        <Formats>
+          <GeneralFormat/>
+          <DateFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text14" Left="312.85" Top="18.9" Width="425.25" Height="28.35" Text="[Sungero.Docflow.Reports.Resources.AssignmentCompletionReport.ReportName]" HorzAlign="Center" VertAlign="Center" Font="Arial, 14pt, style=Bold"/>
+      <TextObject Name="Text15" Left="311.85" Top="47.25" Width="425.25" Height="28.35" Text="[Sungero.Docflow.Reports.Resources.AssignmentCompletionReport.Period] [PeriodBegin] [Sungero.Docflow.Reports.Resources.AssignmentCompletionReport.PeriodTo] [ClientPeriodEnd]" HorzAlign="Center" Font="Arial, 12pt, style=Bold">
+        <Formats>
+          <DateFormat/>
+          <DateFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text1" Top="85.05" Width="122.85" Height="47.25" Border.Lines="All" Text="[Sungero.Docflow.Reports.Resources.AssignmentCompletionReport.Employee]" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="Text2" Left="122.85" Top="85.05" Width="75.6" Height="47.25" Border.Lines="All" Text="[Sungero.Docflow.Reports.Resources.AssignmentCompletionReport.AssignmentCompletion]" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="Text3" Left="198.45" Top="85.05" Width="340.2" Height="47.25" Border.Lines="All" Text="[Sungero.Docflow.Reports.Resources.AssignmentCompletionReport.Subject]" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="Text5" Left="538.65" Top="85.05" Width="113.4" Height="47.25" Border.Lines="All" Text="[Sungero.Docflow.Reports.Resources.AssignmentCompletionReport.TaskAuthor]" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="Text6" Left="652.05" Top="85.05" Width="85.05" Height="47.25" Border.Lines="All" Text="[Sungero.Docflow.Reports.Resources.AssignmentCompletionReport.Created]" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="Text7" Left="737.1" Top="85.05" Width="85.05" Height="47.25" Border.Lines="All" Text="[Sungero.Docflow.Reports.Resources.AssignmentCompletionReport.Deadline]" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="Text8" Left="822.15" Top="85.05" Width="85.05" Height="47.25" Border.Lines="All" Text="[Sungero.Docflow.Reports.Resources.AssignmentCompletionReport.Completed]" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="Text9" Left="907.2" Top="85.05" Width="75.6" Height="47.25" Border.Lines="All" Text="[Sungero.Docflow.Reports.Resources.AssignmentCompletionReport.Delay]" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="Text4" Left="982.8" Top="85.05" Width="66.15" Height="47.25" Border.Lines="All" Text="[Sungero.Docflow.Reports.Resources.AssignmentCompletionReport.AssignmentID]" HorzAlign="Center" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="Text17" Width="576.45" Height="18.9" CanGrow="true" Text="[ParamsDescription]" Font="Arial, 9pt"/>
+    </ReportTitleBand>
+    <DataBand Name="Data1" Top="136.3" Width="1047.06" Height="47.25" CanGrow="true" CanBreak="true" DataSource="Table1">
+      <SubreportObject Name="Subreport1" Width="1048.95" Height="47.25" GrowToBottom="true" ReportPage="Page2" PrintOnParent="true"/>
+      <TextObject Name="Text12" Left="198.45" Width="340.2" Height="47.25" Border.Lines="All" CanGrow="true" GrowToBottom="true" Text="[Sungero.Docflow.Reports.Resources.AssignmentCompletionReport.NoAssignments]" Font="Arial, 9pt"/>
+      <TextObject Name="Text30" Left="822.15" Width="85.05" Height="47.25" Border.Lines="All" CanGrow="true" GrowToBottom="true" HorzAlign="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text29" Left="907.2" Width="75.6" Height="47.25" Border.Lines="All" CanGrow="true" GrowToBottom="true" HorzAlign="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text28" Left="982.8" Width="66.15" Height="47.25" Border.Lines="All" CanGrow="true" GrowToBottom="true" HorzAlign="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text27" Left="737.1" Width="85.05" Height="47.25" Border.Lines="All" CanGrow="true" GrowToBottom="true" HorzAlign="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text26" Left="652.05" Width="85.05" Height="47.25" Border.Lines="All" CanGrow="true" GrowToBottom="true" HorzAlign="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text16" Left="538.65" Width="113.4" Height="47.25" Border.Lines="All" CanGrow="true" GrowToBottom="true" HorzAlign="Right" Font="Arial, 10pt"/>
+      <TextObject Name="Text31" Width="122.85" Height="47.25" Border.Lines="All" CanGrow="true" GrowToBottom="true" Text="&lt;b&gt;[Employees.Name]&lt;/b&gt;&#13;&#10;[(Trim([Employees.JobTitle]) != &quot;&quot;) ? Trim([Employees.JobTitle]) + &quot; &quot; : &quot;&quot;]([Employees.Department])" Padding="3, 3, 3, 3" Font="Arial, 9pt" TextRenderType="HtmlTags"/>
+      <TextObject Name="Text32" Left="122.85" Width="75.6" Height="47.25" Border.Lines="All" CanGrow="true" GrowToBottom="true" Text="-" Padding="3, 3, 3, 3" Format="Percent" Format.UseLocale="false" Format.DecimalDigits="0" Format.DecimalSeparator="," Format.GroupSeparator=" " Format.PercentSymbol="%" Format.PositivePattern="1" Format.NegativePattern="1" HorzAlign="Center" Font="Arial, 9pt"/>
+      <Sort>
+        <Sort Expression="([Employees.Total] == null) || ([Employees.Total] == 0) ? 1 :  Round(ToDouble(100*([Employees.Completed] + [Employees.InProcces])/[Employees.Total]), 0)/100"/>
+        <Sort Expression="[Employees.Total] &gt; 0 ? 1 : 0" Descending="true"/>
+        <Sort Expression="[Employees.Name]"/>
+      </Sort>
+    </DataBand>
+  </ReportPage>
+  <ReportPage Name="Page2" Landscape="true" PaperWidth="297" PaperHeight="210" FirstPageSource="15" OtherPagesSource="15" Watermark.Font="Arial, 60pt">
+    <DataBand Name="Data2" Width="1047.06" Height="47.25" CanGrow="true" DataSource="Table" Filter="[Assignments.Performer]==[Employees.EmployeeId]">
+      <TextObject Name="Text19" Left="198.45" Width="340.2" Height="47.25" Border.Lines="All" CanGrow="true" GrowToBottom="true" Text="[Assignments.Subject]" Padding="3, 3, 3, 3" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Assignments.IsRead] &amp;&amp; [Assignments.assignmentStatus] == Sungero.Docflow.Resources.UndoneAndOverdue" Font="Arial, 9.75pt, style=Strikeout"/>
+          <Condition Expression="![Assignments.IsRead] &amp;&amp; [Assignments.assignmentStatus] == Sungero.Docflow.Resources.UndoneAndOverdue" Font="Arial, 9pt, style=Bold" ApplyFont="true"/>
+          <Condition Expression="([Assignments.Status] == &quot;Completed&quot;) &amp;&amp; [Assignments.IsRead]" TextFill.Color="DimGray" Font="Arial, 9pt, style=Strikeout" ApplyTextFill="false" ApplyFont="true"/>
+          <Condition Expression="([Assignments.Status] == &quot;Completed&quot;) &amp;&amp; ![Assignments.IsRead]" TextFill.Color="DimGray" Font="Arial, 9pt, style=Bold, Strikeout" ApplyTextFill="false" ApplyFont="true"/>
+          <Condition Expression="([Assignments.Status] != &quot;Completed&quot;) &amp;&amp; ![Assignments.IsRead]" Font="Arial, 9pt, style=Bold" ApplyTextFill="false" ApplyFont="true"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text20" Left="538.65" Width="113.4" Height="47.25" Border.Lines="All" CanGrow="true" GrowToBottom="true" Text="[Assignments.AuthorName]" Padding="3, 3, 3, 3" Font="Arial, 9pt"/>
+      <TextObject Name="Text21" Left="652.05" Width="85.05" Height="47.25" Border.Lines="All" CanGrow="true" GrowToBottom="true" Text="[Empty][Assignments.Created]&#13;&#10;[Assignments.CreatedTime]" Padding="3, 3, 3, 3" Font="Arial, 9pt">
+        <Formats>
+          <GeneralFormat/>
+          <DateFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text22" Left="737.1" Width="85.05" Height="47.25" Border.Lines="All" CanGrow="true" GrowToBottom="true" Text="[Empty][IIf(Year([Assignments.Deadline]) == 1, Sungero.Docflow.Reports.Resources.AssignmentCompletionReport.WithoutDeadline, [Assignments.Deadline])]&#13;&#10;[Assignments.DeadlineTime]" Padding="3, 3, 3, 3" Font="Arial, 9pt">
+        <Formats>
+          <GeneralFormat/>
+          <DateFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text23" Left="822.15" Width="85.05" Height="47.25" Border.Lines="All" CanGrow="true" GrowToBottom="true" Text="[Empty][IIf(Year([Assignments.Completed]) == 1, Sungero.Docflow.Reports.Resources.AssignmentCompletionReport.No, [Assignments.Completed])]&#13;&#10;[Assignments.CompletedTime]" Padding="3, 3, 3, 3" Font="Arial, 9pt">
+        <Formats>
+          <GeneralFormat/>
+          <DateFormat/>
+          <GeneralFormat/>
+          <GeneralFormat/>
+        </Formats>
+        <Highlight>
+          <Condition Expression="[Assignments.assignmentStatus] == Sungero.Docflow.Resources.UndoneAndOverdue || [Assignments.assignmentStatus] == Sungero.Docflow.Resources.DoneAndOverdue" Font="Arial, 10pt"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text24" Left="907.2" Width="75.6" Height="47.25" Border.Lines="All" CanGrow="true" GrowToBottom="true" Text="[Assignments.Delay]" Padding="3, 3, 3, 3" HorzAlign="Right" Font="Arial, 9pt">
+        <Highlight>
+          <Condition Expression="[Assignments.assignmentStatus] == Sungero.Docflow.Resources.UndoneAndOverdue || [Assignments.assignmentStatus] == Sungero.Docflow.Resources.DoneAndOverdue" Font="Arial, 10pt"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text25" Left="982.8" Width="66.15" Height="47.25" Border.Lines="All" Cursor="Hand" Hyperlink.Expression="[Assignments.HyperLink]" CanGrow="true" GrowToBottom="true" Text="[Assignments.assignmentId]" Padding="3, 3, 3, 3" HorzAlign="Center" Font="Arial, 9pt, style=Underline" TextFill.Color="Blue"/>
+      <TextObject Name="Text10" Width="122.85" Height="47.25" Border.Lines="All" CanGrow="true" GrowToBottom="true" Text="&lt;b&gt;[Assignments.EmployeeName]&lt;/b&gt;&#13;&#10;[(Trim([Assignments.JobTitle]) != &quot;&quot;) ? Trim([Assignments.JobTitle]) + &quot; &quot; : &quot;&quot;]([Assignments.Department])" Padding="3, 3, 3, 3" Duplicates="Merge" Font="Arial, 9pt" TextRenderType="HtmlTags"/>
+      <TextObject Name="Text11" Left="122.85" Width="75.6" Height="47.25" Border.Lines="All" CanGrow="true" GrowToBottom="true" Text="[([Assignments.TotalCount] == null) || ([Assignments.TotalCount] - [Assignments.InProccesCount] == 0) ? &quot;-&quot; : Round(100*([Assignments.CompletedCount])/ToDouble([Assignments.TotalCount] - [Assignments.InProccesCount]), 0) + &quot;%&quot;]" Padding="3, 3, 3, 3" Duplicates="Merge" HorzAlign="Center" Font="Arial, 9pt"/>
+      <Sort>
+        <Sort Expression="[Assignments.Status]" Descending="true"/>
+        <Sort Expression="[Assignments.DelaySort]" Descending="true"/>
+        <Sort Expression="[Assignments.Deadline]"/>
+      </Sort>
+    </DataBand>
+  </ReportPage>
+</Report>

@@ -1,0 +1,70 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "6c55272d-c340-44e3-a9e9-46e231c73563",
+  "Name": "ContractSignatureSettingDocumentKinds",
+  "AccessRightsMode": "NoRight",
+  "BaseGuid": "7eeef0f4-ad1e-4dc8-84f7-470a29f7fd91",
+  "CanBeNavigationPropertyType": true,
+  "CreationAreaMetadata": {
+    "NameGuid": "78ab50ac-cd3f-4b9b-ace4-91be4754886f",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true
+  },
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "b6e3c475-f79e-481d-a195-a37b528494fc",
+      "Name": "SignatureSettingBase",
+      "Code": "SignSettings",
+      "EntityGuid": "99b2ba4b-8861-42cb-8bf6-3040e9995c11",
+      "IsAncestorMetadata": true,
+      "IsReferenceToRootEntity": true,
+      "Overridden": [
+        "EntityGuid"
+      ]
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "1aa91826-3f29-4fe8-9ee7-80e8e49520aa",
+      "Name": "DocumentKind",
+      "Code": "DocumentKind",
+      "HandledEvents": [
+        "LookupServer"
+      ],
+      "IsAncestorMetadata": true,
+      "IsRequired": true,
+      "Overridden": [
+        "HandledEvents"
+      ]
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "b5090da7-1feb-40dc-a0db-2f66e2e2b439",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "0bff50fe-af17-4661-a336-efee6e15f28b",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 9
+    }
+  ]
+}

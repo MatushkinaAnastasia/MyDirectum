@@ -1,0 +1,88 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "81292dd3-0933-4da0-a1d2-56701af33bea",
+  "Name": "DocumentRegisterNumberingSections",
+  "AccessRightsMode": "NoRight",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "NumSections",
+  "CreationAreaMetadata": {
+    "NameGuid": "90bdf306-b03e-4e23-9cbe-706e1fbccdcf",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true
+  },
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "509ea4dd-94bb-4e40-bdbf-fd4bf3fd6ef8",
+      "Name": "DocumentRegister",
+      "CanBeSearch": false,
+      "Code": "Register",
+      "EntityGuid": "d7800dd5-a9d2-41e9-bbc4-a39292ac1eeb",
+      "IsReferenceToRootEntity": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder"
+    },
+    {
+      "$type": "Sungero.Metadata.EnumPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "5429295c-997e-4fb6-9824-3b12cae285a9",
+      "Name": "Section",
+      "CanBeSearch": false,
+      "Code": "Section",
+      "DirectValues": [
+        {
+          "NameGuid": "0e0259ff-2d17-412e-bd14-35b3459b44f2",
+          "Name": "Month",
+          "Code": "Month"
+        },
+        {
+          "NameGuid": "f14118cb-36a2-4bcc-b8a5-d266ee75f002",
+          "Name": "Year",
+          "Code": "Year"
+        },
+        {
+          "NameGuid": "748a848d-4664-4bba-84fe-196cba8053a4",
+          "Name": "Document",
+          "Code": "Document"
+        },
+        {
+          "NameGuid": "45b863ee-b54e-41f5-99d0-564a7c5a79cb",
+          "Name": "Quarter",
+          "Code": "Quarter"
+        }
+      ],
+      "HandledEvents": [
+        "ValueInputClient"
+      ],
+      "IsRequired": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder"
+    }
+  ],
+  "RibbonCardMetadata": {
+    "NameGuid": "54a3cc05-d06e-4529-89af-5c2c628ce5df",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "4e558330-e9fc-4c1a-aa99-f4690452df4b",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 8
+    }
+  ]
+}

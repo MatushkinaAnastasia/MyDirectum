@@ -1,0 +1,56 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "7a198d2c-2370-4d84-906f-ae34bd6c5ea1",
+  "Name": "ContractSignatureSettingBusinessUnits",
+  "AccessRightsMode": "NoRight",
+  "BaseGuid": "8de9438e-0af4-47df-8155-4b7b90c8d3d1",
+  "CanBeNavigationPropertyType": true,
+  "CreationAreaMetadata": {
+    "NameGuid": "78ab50ac-cd3f-4b9b-ace4-91be4754886f",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true
+  },
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "5cea0245-e862-4503-ba06-61432571842c",
+      "Name": "SignatureSettingBase",
+      "Code": "SignSettings",
+      "EntityGuid": "99b2ba4b-8861-42cb-8bf6-3040e9995c11",
+      "IsAncestorMetadata": true,
+      "IsReferenceToRootEntity": true,
+      "Overridden": [
+        "EntityGuid"
+      ]
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "9222e67b-51b8-4d31-9d62-3c109ce0d2d1",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "c890f8ae-da62-4d46-9b36-e79c08aa0169",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 9
+    }
+  ]
+}

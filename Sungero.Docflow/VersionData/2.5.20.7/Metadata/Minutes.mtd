@@ -1,0 +1,55 @@
+{
+  "$type": "Sungero.Metadata.DocumentMetadata, Sungero.Metadata",
+  "NameGuid": "bb4780ff-b2c3-4044-a390-e9e110791bf6",
+  "Name": "Minutes",
+  "AccessRightsMode": "Both",
+  "Actions": [],
+  "BaseGuid": "f9a837b7-289e-4f03-a920-0284a778bcbf",
+  "CanBeNavigationPropertyType": true,
+  "CanBeSearch": true,
+  "CreationAreaMetadata": {
+    "NameGuid": "01403d88-dd86-41ff-aa3b-40002653507a",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true
+  },
+  "ExtraSearchProperties": [],
+  "HandledEvents": [],
+  "OpenCardByDefaultInCollection": true,
+  "Operations": [],
+  "OperationsClass": "",
+  "Overridden": [
+    "CanBeSearch"
+  ],
+  "Properties": [],
+  "ResourcesKeys": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "1c04f642-9176-40d1-ac8c-226cabe80169",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "d63f9d22-16d0-45b9-8422-fcc9eec3d0f5",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "DocumentMetadata",
+      "Number": 0
+    },
+    {
+      "Type": "EntityMetadata",
+      "Number": 6
+    }
+  ]
+}

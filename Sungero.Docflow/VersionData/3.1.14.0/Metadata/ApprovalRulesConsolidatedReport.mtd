@@ -1,0 +1,70 @@
+{
+  "$type": "Sungero.Metadata.ReportMetadata, Sungero.Reporting.Shared",
+  "NameGuid": "65a79eb2-8bae-4640-b817-e033c8ba9589",
+  "Name": "ApprovalRulesConsolidatedReport",
+  "AssociatedGuid": "df83a2ea-8d43-4ec4-a34a-2e61863014df",
+  "BaseGuid": "cef9a810-3f30-4eca-9fe3-30992af0b818",
+  "DataSources": [],
+  "DefaultExportFormat": "Excel",
+  "ExportFormats": [
+    "Excel"
+  ],
+  "HandledEvents": [
+    "AfterExecuteServer",
+    "BeforeExecuteServer",
+    "BeforeExecuteClient"
+  ],
+  "IconResourcesKeys": [],
+  "Overridden": [
+    "PublicConstants",
+    "PublicStructures",
+    "DisplayName",
+    "Description",
+    "ExportFormats",
+    "DefaultExportFormat",
+    "HandledEvents",
+    "Parameters"
+  ],
+  "Parameters": [
+    {
+      "NameGuid": "3e97a320-0738-475e-80c5-efadd2aea968",
+      "Name": "ReportSessionId",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "7803b58b-496a-453c-8f03-8f3d14c349ed",
+      "Name": "BusinessUnit",
+      "EntityType": "eff95720-181f-4f7d-892d-dec034c7b2ab",
+      "InternalDataTypeName": "Sungero.Company.IBusinessUnit, Sungero.Domain.Interfaces"
+    },
+    {
+      "NameGuid": "7b851bda-c2d0-4da7-9593-0f416053343b",
+      "Name": "Department",
+      "EntityType": "61b1c19f-26e2-49a5-b3d3-0d3618151e12",
+      "InternalDataTypeName": "Sungero.Company.IDepartment, Sungero.Domain.Interfaces"
+    },
+    {
+      "NameGuid": "1683a189-d40c-4532-bde5-07c42a99ca73",
+      "Name": "IncludeSubsidiary",
+      "InternalDataTypeName": "System.Boolean",
+      "IsSimpleDataType": true
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [
+    "BusinessUnit",
+    "DocumentFlow",
+    "DocumentKind",
+    "Status",
+    "Priority",
+    "ApprovalRule",
+    "NotFound",
+    "RuleNotFound",
+    "ApprovalRuleId",
+    "ContractCategory",
+    "Department",
+    "DocumentParentType",
+    "IncludeSubsidiary"
+  ],
+  "Versions": []
+}

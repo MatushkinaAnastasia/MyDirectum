@@ -1,0 +1,73 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "3d46013c-e45b-41c1-ad7b-00b10ce2dc64",
+  "Name": "ApprovalStageAssignees",
+  "AccessRightsMode": "NoRight",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "StgAssignees",
+  "CreationAreaMetadata": {
+    "NameGuid": "8677783b-ebc1-495f-8c77-7882784e5b4f",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true
+  },
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "Overridden": [
+    "IsVisible"
+  ],
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "bb24606c-a041-4e5a-bf27-58db4f0fd42a",
+      "Name": "ApprovalStage",
+      "CanBeSearch": false,
+      "Code": "ApprovalStage",
+      "EntityGuid": "bbb34726-4316-4d87-a64d-9dcf74b654f4",
+      "IsReferenceToRootEntity": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder"
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "c6f27b55-4b0b-4b07-9559-a4f9b222a66a",
+      "Name": "Assignee",
+      "CanBeSearch": false,
+      "Code": "Assignee",
+      "EntityGuid": "b7905516-2be5-4931-961c-cb38d5677565",
+      "IsRequired": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "96d171b2-cbea-4d4b-9ee0-6898bf47a7b5",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "8f7fb3ec-48bb-47dc-ae1f-3fac8ea7ecd6",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 9
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 2
+    }
+  ]
+}

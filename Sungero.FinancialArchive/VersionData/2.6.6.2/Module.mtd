@@ -1,0 +1,287 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "59797aba-7718-45df-8ac1-5bb7a36c7a66",
+  "Name": "FinancialArchive",
+  "ClientAssemblyName": "Sungero.FinancialArchive.Client",
+  "ClientBaseAssemblyName": "Sungero.FinancialArchive.ClientBase",
+  "ClientBaseNamespace": "Sungero.FinancialArchive.ClientBase",
+  "ClientNamespace": "Sungero.FinancialArchive.Client",
+  "Code": "FinArch",
+  "CompanyCode": "Sungero",
+  "Cover": {
+    "NameGuid": "92f52917-55e5-4c84-990f-66a7e1d44aa5",
+    "Actions": [
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "2753003a-067d-4d3d-95e7-a1e016d356b8",
+        "Name": "AllContractualDocuments",
+        "EntityTypeId": "59079f7f-a326-4947-bbd6-0ae6dfb5f59b",
+        "GroupId": "4d293281-21ac-4284-81f5-9c76529c7ea2",
+        "PreviousItemGuid": "40c65841-6c4b-4e1b-8b91-458bc4b38c1f"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "40c65841-6c4b-4e1b-8b91-458bc4b38c1f",
+        "Name": "AllFinancialDocuments",
+        "EntityTypeId": "96c4f4f3-dc74-497a-b347-e8faf4afe320",
+        "GroupId": "4d293281-21ac-4284-81f5-9c76529c7ea2",
+        "PreviousItemGuid": "567f6a00-5d05-46c2-ad70-648e8d9edc89"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "567f6a00-5d05-46c2-ad70-648e8d9edc89",
+        "Name": "CreateDocument",
+        "FunctionName": "CreateFinancialDocument",
+        "GroupId": "4d293281-21ac-4284-81f5-9c76529c7ea2"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "633df228-59ce-4808-a8bd-816efbc79260",
+        "Name": "SearchAndExport",
+        "FunctionName": "SearchByRequisitesAndExport",
+        "GroupId": "1dac245d-1d77-4e71-9919-cd66b3357842",
+        "PreviousItemGuid": "e2d63fbb-cdf1-434b-8d4d-bbeb6a1a47b9"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "e2d63fbb-cdf1-434b-8d4d-bbeb6a1a47b9",
+        "Name": "SearchByRequisites",
+        "FunctionName": "SearchByRequisites",
+        "GroupId": "1dac245d-1d77-4e71-9919-cd66b3357842"
+      }
+    ],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "a6c2ae31-f627-41f9-b165-c7aae837dddb",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [
+      {
+        "NameGuid": "4d293281-21ac-4284-81f5-9c76529c7ea2",
+        "Name": "Documents",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconDocuments_4d29328121ac428481f59c76529c7ea2.ico"
+      },
+      {
+        "NameGuid": "ac76066e-d4e7-40ac-a5e4-cf57ce6828a9",
+        "Name": "Reports",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconReports_ac76066ed4e740aca5e4cf57ce6828a9.ico",
+        "PreviousItemGuid": "4d293281-21ac-4284-81f5-9c76529c7ea2"
+      },
+      {
+        "NameGuid": "1dac245d-1d77-4e71-9919-cd66b3357842",
+        "Name": "Search",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconSearch_1dac245d1d774e719919cd66b3357842.ico",
+        "PreviousItemGuid": "ac76066e-d4e7-40ac-a5e4-cf57ce6828a9"
+      }
+    ],
+    "Header": {
+      "NameGuid": "3509d115-6227-4916-971e-075291cf7c7d",
+      "BackgroundPosition": "Stretch"
+    }
+  },
+  "Dependencies": [
+    {
+      "Id": "e4fe1153-919e-4732-aadc-2c8e9b5c0b5a",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    },
+    {
+      "Id": "df83a2ea-8d43-4ec4-a34a-2e61863014df",
+      "MaxVersion": "",
+      "MinVersion": "2.6.8.1"
+    },
+    {
+      "Id": "f9d15b1c-2784-4c84-8348-1e162d70b988",
+      "MaxVersion": "",
+      "MinVersion": "2.6.0.0"
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "74c9ddd4-4bc4-42b6-8bb0-c91d5e21fb8a"
+    },
+    {
+      "ItemId": "f50c4d8a-56bc-43ef-bac3-856f57ca70be",
+      "PreviousItemId": "74c9ddd4-4bc4-42b6-8bb0-c91d5e21fb8a"
+    },
+    {
+      "ItemId": "4e81f9ca-b95a-4fd4-bf76-ea7176c215a7",
+      "PreviousItemId": "f50c4d8a-56bc-43ef-bac3-856f57ca70be"
+    },
+    {
+      "ItemId": "f2f5774d-5ca3-4725-b31d-ac618f6b8850",
+      "PreviousItemId": "4e81f9ca-b95a-4fd4-bf76-ea7176c215a7"
+    },
+    {
+      "ItemId": "96c4f4f3-dc74-497a-b347-e8faf4afe320",
+      "PreviousItemId": "f2f5774d-5ca3-4725-b31d-ac618f6b8850"
+    },
+    {
+      "ItemId": "59079f7f-a326-4947-bbd6-0ae6dfb5f59b",
+      "PreviousItemId": "96c4f4f3-dc74-497a-b347-e8faf4afe320"
+    },
+    {
+      "ItemId": "e5081ffe-8a47-41fd-ad9f-407d1b181464",
+      "PreviousItemId": "59079f7f-a326-4947-bbd6-0ae6dfb5f59b"
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "High",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "Sungero.FinancialArchive",
+  "IsLicensed": true,
+  "Overridden": [
+    "IsLicensed",
+    "Importance"
+  ],
+  "PublicFunctions": [
+    {
+      "NameGuid": "9bde6663-2c1f-4cc9-a409-494573c3d420",
+      "Name": "CreateIncomingTaxInvoiceDocument",
+      "Parameters": [
+        {
+          "NameGuid": "b2919410-5a40-47a3-be6f-c63f7057bcbb",
+          "Name": "operation",
+          "ParameterType": "global::Sungero.Core.Enumeration",
+          "ParameterTypeFullName": "Sungero.Core.Enumeration, Sungero.Domain.Shared"
+        },
+        {
+          "NameGuid": "d9d83497-a9cf-4c16-97b8-061e2fadf524",
+          "Name": "comment",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "NameGuid": "a40ff25d-6c14-4a62-9190-d1cc2947e70e",
+          "Name": "box",
+          "ParameterType": "global::Sungero.ExchangeCore.IBusinessUnitBox",
+          "ParameterTypeFullName": "Sungero.ExchangeCore.IBusinessUnitBox, Sungero.Domain.Interfaces"
+        },
+        {
+          "NameGuid": "24d904dc-46e3-4f9c-b7b2-cf3996c377d0",
+          "Name": "counterparty",
+          "ParameterType": "global::Sungero.Parties.ICounterparty",
+          "ParameterTypeFullName": "Sungero.Parties.ICounterparty, Sungero.Domain.Interfaces"
+        }
+      ],
+      "ReturnType": "global::Sungero.Docflow.IOfficialDocument",
+      "ReturnTypeFullName": "Sungero.Docflow.IOfficialDocument, Sungero.Domain.Interfaces"
+    },
+    {
+      "NameGuid": "0dd2e015-183c-4486-8dad-4ba7914261fd",
+      "Name": "CreateWaybillDocument",
+      "Parameters": [
+        {
+          "NameGuid": "6b0c1fa0-2f5a-4725-b54e-14b8b63ad5aa",
+          "Name": "operation",
+          "ParameterType": "global::Sungero.Core.Enumeration",
+          "ParameterTypeFullName": "Sungero.Core.Enumeration, Sungero.Domain.Shared"
+        },
+        {
+          "NameGuid": "829e7cc0-dba1-4032-b720-0446cd994827",
+          "Name": "comment",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "NameGuid": "9b52fcd5-3951-4188-b889-62e1b30d645c",
+          "Name": "box",
+          "ParameterType": "global::Sungero.ExchangeCore.IBusinessUnitBox",
+          "ParameterTypeFullName": "Sungero.ExchangeCore.IBusinessUnitBox, Sungero.Domain.Interfaces"
+        },
+        {
+          "NameGuid": "297700b5-864d-4f18-acd2-aa9268358379",
+          "Name": "counterparty",
+          "ParameterType": "global::Sungero.Parties.ICounterparty",
+          "ParameterTypeFullName": "Sungero.Parties.ICounterparty, Sungero.Domain.Interfaces"
+        }
+      ],
+      "ReturnType": "global::Sungero.Docflow.IOfficialDocument",
+      "ReturnTypeFullName": "Sungero.Docflow.IOfficialDocument, Sungero.Domain.Interfaces"
+    },
+    {
+      "NameGuid": "10cf3bf7-1eff-4d11-a981-8cfc6f7765b9",
+      "Name": "CreateContractStatementDocument",
+      "Parameters": [
+        {
+          "NameGuid": "3fe4906b-c147-4317-b845-6517b7eb8de6",
+          "Name": "operation",
+          "ParameterType": "global::Sungero.Core.Enumeration",
+          "ParameterTypeFullName": "Sungero.Core.Enumeration, Sungero.Domain.Shared"
+        },
+        {
+          "NameGuid": "cb0ae8fc-26f0-4539-b8c6-c8d6177df488",
+          "Name": "comment",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "NameGuid": "7801c7c3-e0ef-43b7-a98a-d2c33cb7a0ce",
+          "Name": "box",
+          "ParameterType": "global::Sungero.ExchangeCore.IBusinessUnitBox",
+          "ParameterTypeFullName": "Sungero.ExchangeCore.IBusinessUnitBox, Sungero.Domain.Interfaces"
+        },
+        {
+          "NameGuid": "dd066c02-85b6-466c-afcf-a87316d7d943",
+          "Name": "counterparty",
+          "ParameterType": "global::Sungero.Parties.ICounterparty",
+          "ParameterTypeFullName": "Sungero.Parties.ICounterparty, Sungero.Domain.Interfaces"
+        }
+      ],
+      "ReturnType": "global::Sungero.Docflow.IOfficialDocument",
+      "ReturnTypeFullName": "Sungero.Docflow.IOfficialDocument, Sungero.Domain.Interfaces"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "Sungero.FinancialArchive",
+  "ResourcesKeys": [
+    "RoleNameFinancialArchiveResponsible",
+    "DescriptionFinancialArchiveResponsible",
+    "Counterparty",
+    "RegistrationDateFrom",
+    "RegistrationDateTo",
+    "WaybillDocumentKindName",
+    "WaybillDocumentKindShortName",
+    "WaybillDocumentTypeName",
+    "IncomingTaxInvoiceTypeName",
+    "OutgoingTaxInvoiceTypeName",
+    "IncomingTaxInvoiceKindName",
+    "OutgoingTaxInvoiceKindName",
+    "OutgoingTaxInvoiceKindShortName",
+    "IncomingTaxInvoiceKindShortName",
+    "AdjustIncomingTaxInvoiceKindName",
+    "AdjustIncomingTaxInvoiceKindShortName",
+    "AdjustOutgoingTaxInvoiceKindName",
+    "AdjustOutgoingTaxInvoiceKindShortName",
+    "BuyerTitleVersionNote",
+    "InitializeSystemId",
+    "RegistersAndSettingsTaxInvoiceName",
+    "RegistersAndSettingsTaxInvoiceIndex",
+    "RegistersAndSettingsWaybillName",
+    "RegistersAndSettingsWaybillIndex",
+    "RegistersAndSettingsActIndex",
+    "RegistersAndSettingsActName",
+    "ContractStatementKindName",
+    "ContractStatementKindShortName",
+    "ContractStatementTypeName",
+    "SellerTitleVersionNote"
+  ],
+  "ServerAssemblyName": "Sungero.FinancialArchive.Server",
+  "ServerNamespace": "Sungero.FinancialArchive.Server",
+  "SharedAssemblyName": "Sungero.FinancialArchive.Shared",
+  "SharedNamespace": "Sungero.FinancialArchive.Shared",
+  "SpecialFolders": [],
+  "Version": "2.6.6.2",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 4
+    }
+  ]
+}

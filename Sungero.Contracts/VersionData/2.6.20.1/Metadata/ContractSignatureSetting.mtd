@@ -1,0 +1,156 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "99b2ba4b-8861-42cb-8bf6-3040e9995c11",
+  "Name": "ContractSignatureSetting",
+  "BaseGuid": "19f9b6d8-b072-4af0-b6e1-3f8a339506be",
+  "CanBeNavigationPropertyType": true,
+  "CreationAreaMetadata": {
+    "NameGuid": "f7766750-eee2-4fcd-8003-5c06a90d1f44",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "b0125fbd-3b91-4dbb-914a-689276216404",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true
+  },
+  "Forms": [
+    {
+      "$type": "Sungero.Metadata.StandaloneFormMetadata, Sungero.Metadata",
+      "NameGuid": "f9284af1-4a28-4e79-9a6a-5006b1ec7f15",
+      "Name": "Card",
+      "Controls": [
+        {
+          "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
+          "NameGuid": "cbd55b09-dcb0-4271-b1fd-b736d16c8e55",
+          "Name": "Criteria",
+          "GroupType": "WithTitleNoBorder",
+          "IsAncestorMetadata": true,
+          "Overridden": [
+            "UseAncestorControls",
+            "SerializableColumnCount"
+          ]
+        },
+        {
+          "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
+          "NameGuid": "437c0dee-c0eb-46ae-b930-23ca9a859fc1",
+          "Name": "Additional",
+          "IsAncestorMetadata": true,
+          "Overridden": [
+            "Controls",
+            "UseAncestorControls"
+          ]
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "2289a55e-c2a7-46ea-9ad8-c7365dc45098",
+          "Name": "Categories",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.MultiSelectEditorToCollectionBinder",
+          "ParentGuid": "437c0dee-c0eb-46ae-b930-23ca9a859fc1",
+          "PropertyGuid": "89950298-dc74-42dc-b32d-2888e156b574",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": [
+            {
+              "Name": "NavigationPropertyGuid",
+              "Value": "61491aeb-52a0-4f41-b9f0-bbf823b0deff"
+            }
+          ]
+        }
+      ],
+      "IsAncestorMetadata": true,
+      "Overridden": []
+    }
+  ],
+  "IconName": "ContractSignatureSetting.ico",
+  "IconResourcesKeys": [],
+  "IsVisible": false,
+  "OperationsClass": "",
+  "Overridden": [
+    "IsVisible",
+    "IconName"
+  ],
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "bd2b202a-353f-4aa4-aece-903e7d3603b4",
+      "Name": "DocumentKinds",
+      "Code": "SignKinds",
+      "EntityGuid": "6c55272d-c340-44e3-a9e9-46e231c73563",
+      "HandledEvents": [
+        "ChangedShared"
+      ],
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "EntityGuid",
+        "HandledEvents"
+      ]
+    },
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "89950298-dc74-42dc-b32d-2888e156b574",
+      "Name": "Categories",
+      "Code": "SignCategories",
+      "EntityGuid": "ecb1956b-d112-4ce8-990d-a2210d5b0bd0",
+      "IsShowedInList": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToChildCollectionBinder",
+      "PreviousPropertyGuid": "ae08803c-69fe-412a-af08-9777477c0dd8"
+    }
+  ],
+  "PublicFunctions": [
+    {
+      "NameGuid": "6cb40e13-39b9-4374-973c-6bced839bdb8",
+      "Name": "UpdateBusinessUnitSetting",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "NameGuid": "cdbaf620-5734-41b1-b30e-a9dedc138f93",
+          "Name": "unit",
+          "ParameterType": "global::Sungero.Company.IBusinessUnit",
+          "ParameterTypeFullName": "Sungero.Company.IBusinessUnit, Sungero.Domain.Interfaces"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [
+    "IncompatibleCategoriesExcluded",
+    "DefaultContractSignatureSettingReason",
+    "DefaultContractSignatureSettingNote",
+    "DocumentCategories",
+    "DocumentAdditionalCategories"
+  ],
+  "RibbonCardMetadata": {
+    "NameGuid": "3bcc248b-b489-4ce1-bc58-5092016368bd",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "7166f75f-d1c6-48a9-b04b-cc9c62377829",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 8
+    }
+  ]
+}

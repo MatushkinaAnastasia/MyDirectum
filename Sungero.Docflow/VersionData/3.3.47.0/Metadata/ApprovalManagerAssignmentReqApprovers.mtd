@@ -1,0 +1,69 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "b884f2e5-080d-4c3e-a58c-ddc6a59bbb0e",
+  "Name": "ApprovalManagerAssignmentReqApprovers",
+  "AccessRightsMode": "NoRight",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "AAprManReqAprs",
+  "CreationAreaMetadata": {
+    "NameGuid": "ec7c54a8-b9c1-4e17-87b5-79db7948fdfe",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true
+  },
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "2ec66f8b-4839-4bb3-b7ce-6cc597e3cb3f",
+      "Name": "ApprovalManagerAssignment",
+      "CanBeSearch": false,
+      "Code": "Assignment",
+      "EntityGuid": "bbb08f45-60c1-4496-9ff6-b32caed44215",
+      "IsReferenceToRootEntity": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder"
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "c107b789-c2d1-40ef-9563-2f3ae54be90e",
+      "Name": "Approver",
+      "CanBeSearch": false,
+      "Code": "Approver",
+      "EntityGuid": "b7905516-2be5-4931-961c-cb38d5677565",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "ed4905bf-1856-4946-9f5a-c0d835b70103",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "0ab74e15-07e0-4695-a352-3f2320156d4d",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 9
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 2
+    }
+  ]
+}

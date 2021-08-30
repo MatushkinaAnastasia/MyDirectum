@@ -1,0 +1,88 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "593dcc11-15ee-49f2-b4ef-bf4cf7867055",
+  "Name": "Meetings",
+  "ClientAssemblyName": "Sungero.Meetings.Client",
+  "ClientBaseAssemblyName": "Sungero.Meetings.ClientBase",
+  "ClientBaseNamespace": "Sungero.Meetings.ClientBase",
+  "ClientNamespace": "Sungero.Meetings.Client",
+  "Code": "Meeting",
+  "CompanyCode": "Sungero",
+  "Cover": {
+    "NameGuid": "fcf78972-29e9-48ac-ab25-a7614c7e22f2",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "e25f4439-26d2-437a-965b-b1ba9efdd7fb",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "69a727db-3971-414a-a880-0e6fc7e1d522",
+      "BackgroundPosition": "Stretch"
+    }
+  },
+  "Dependencies": [
+    {
+      "Id": "e4fe1153-919e-4732-aadc-2c8e9b5c0b5a",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    }
+  ],
+  "ExplorerTreeOrder": [
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "Sungero.Meetings",
+  "IsVisible": false,
+  "Libraries": [
+    {
+      "NameGuid": "57f61855-55bc-4c17-9e22-97797a1237e6",
+      "Name": "TagReader",
+      "Scope": "Both"
+    }
+  ],
+  "Overridden": [
+    "IsVisible"
+  ],
+  "PublicFunctions": [
+    {
+      "NameGuid": "6e657cfb-fdf3-49d5-891f-2d6f23e39843",
+      "Name": "GetMeetingActionItemExecutionTasks",
+      "IsRemote": true,
+      "Placement": "Shared",
+      "ReturnType": "global::System.Linq.IQueryable<global::Sungero.RecordManagement.IActionItemExecutionTask>",
+      "ReturnTypeFullName": "System.Linq.IQueryable"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "Sungero.Meetings",
+  "ResourcesKeys": [
+    "NameMeetingResponsibleRole",
+    "DescriptionMeetingResponsibleRole",
+    "AgendaTypeName",
+    "AgendaKindName",
+    "AgendaKindShortName",
+    "MinutesTypeName",
+    "MinutesKindName",
+    "MinutesKindShortName",
+    "RegistersAndSettingsMinutesIndex",
+    "RegistersAndSettingsMinutesName"
+  ],
+  "ServerAssemblyName": "Sungero.Meetings.Server",
+  "ServerNamespace": "Sungero.Meetings.Server",
+  "SharedAssemblyName": "Sungero.Meetings.Shared",
+  "SharedNamespace": "Sungero.Meetings.Shared",
+  "SpecialFolders": [],
+  "Version": "2.8.9.0",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 6
+    }
+  ]
+}
