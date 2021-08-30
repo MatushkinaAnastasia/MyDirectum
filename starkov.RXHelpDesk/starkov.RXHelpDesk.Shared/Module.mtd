@@ -1,0 +1,57 @@
+{
+  "$type": "Sungero.Metadata.SolutionMetadata, Sungero.Metadata",
+  "NameGuid": "47312558-aa4e-428e-9683-b4736e896d69",
+  "Name": "RXHelpDesk",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "starkov.RXHelpDesk.Client",
+  "ClientBaseAssemblyName": "starkov.RXHelpDesk.ClientBase",
+  "ClientBaseNamespace": "starkov.RXHelpDesk.ClientBase",
+  "ClientNamespace": "starkov.RXHelpDesk.Client",
+  "Code": "RXHelpD",
+  "CompanyCode": "starkov",
+  "Cover": {
+    "NameGuid": "f0d641a8-88c1-4025-b08d-923698a5d63d",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "4810b921-92ba-4bcb-a197-999008e36002",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "942caefe-94c5-4900-ad41-299f3ffe3059",
+      "BackgroundPosition": "Stretch"
+    }
+  },
+  "DesktopViews": [],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "starkov.RXHelpDesk",
+  "OrderedSpecialFolders": [],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "starkov.RXHelpDesk",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "starkov.RXHelpDesk.Server",
+  "ServerNamespace": "starkov.RXHelpDesk.Server",
+  "SharedAssemblyName": "starkov.RXHelpDesk.Shared",
+  "SharedNamespace": "starkov.RXHelpDesk.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.0",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "SolutionMetadata",
+      "Number": 6
+    },
+    {
+      "Type": "ModuleMetadata",
+      "Number": 6
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

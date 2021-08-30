@@ -1,0 +1,68 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "529f7eb5-6f2f-47a3-96ae-553ea5b71230",
+  "Name": "Requests",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "starkov.Requests.Client",
+  "ClientBaseAssemblyName": "starkov.Requests.ClientBase",
+  "ClientBaseNamespace": "starkov.Requests.ClientBase",
+  "ClientNamespace": "starkov.Requests.Client",
+  "Code": "Request",
+  "CompanyCode": "starkov",
+  "Cover": {
+    "NameGuid": "949e8453-d640-4add-860b-de4605577e3c",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "ff67eb3d-6026-4d24-b9da-c57fd09792d8",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "9b8df6a8-0584-4413-acb4-a7a37bfda498",
+      "BackgroundPosition": "Stretch"
+    }
+  },
+  "Dependencies": [
+    {
+      "Id": "47312558-aa4e-428e-9683-b4736e896d69",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "0095c46c-fa27-4327-a40f-23ae45c915a7"
+    },
+    {
+      "ItemId": "487bed7d-0087-43e2-9833-c985c3b0a5af",
+      "PreviousItemId": "0095c46c-fa27-4327-a40f-23ae45c915a7"
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "starkov.Requests",
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "starkov.Requests",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "starkov.Requests.Server",
+  "ServerNamespace": "starkov.Requests.Server",
+  "SharedAssemblyName": "starkov.Requests.Shared",
+  "SharedNamespace": "starkov.Requests.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.0",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 6
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}
